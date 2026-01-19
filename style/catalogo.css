@@ -1,0 +1,421 @@
+/*paleta de cores*/
+        :root {
+            /*amarelos*/
+            --amarelo-1: #FFC301;
+            --amarelo-2: #FEDD63;
+            --amarelo-3: #E2E203;
+            --amarelo-4: #F8BC00;
+            --amarelo-5: #FBC101; /*destaque principal*/
+            --amarelo-6: #F4B704;
+
+            /*verdes*/
+            --verde-1: #8FB001;
+            --verde-2: #99AC2D;
+            --verde-3: #648B13;
+            --verde-4: #169152; /*verde institucional/escuro*/
+
+            /*variaveis css base*/
+            --cor-destaque: var(--amarelo-5);
+            --cor-secundaria: var(--verde-4);
+            --cor-texto: #333333;
+            --cor-fundo: #FAFAFA; /*creme bem suave para ressaltar o natural*/
+            --cor-fundo-suave: #FFFFFF;
+        }
+
+        /*css base mantido e adaptado*/
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--cor-texto); background: var(--cor-fundo); overflow-x: hidden; padding-bottom: 60px; }
+        img { max-width: 100%; display: block; }
+        a { text-decoration: none; }
+
+        /*cabecalho simplificado para catalogo*/
+        header {
+            background: white;
+            padding: 15px 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo h2 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 2rem;
+            color: var(--verde-4);
+            letter-spacing: 1px;
+        }
+
+        /*botao pdf estilo novo*/
+.btn-download-pdf {
+    display: flex;
+    align-items: center;
+    gap: 8px; /*espaco entre icone e texto*/
+    
+    /*gradiente verde escuro para verde claro*/
+    background: linear-gradient(to right, var(--verde-4), var(--verde-3));
+    
+    color: #ffffff !important; /*forca texto branco*/
+    padding: 10px 24px;
+    border-radius: 50px; /*formato pilula*/
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+    
+    /*sombra suave na cor do botao*/
+    box-shadow: 0 4px 15px rgba(22, 145, 82, 0.3);
+    
+    /*transicao suave*/
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1); /*detalhe sutil*/
+}
+
+/*efeito hover*/
+.btn-download-pdf:hover {
+    transform: translateY(-2px); /*sobe levemente*/
+    box-shadow: 0 6px 20px rgba(22, 145, 82, 0.5); /*sombra aumenta*/
+    filter: brightness(1.1); /*leve brilho*/
+}
+
+/*ajuste do icone svg para ficar branco*/
+.btn-download-pdf svg path {
+    fill: #ffffff;
+}
+
+        /*hero section*/
+.hero {
+    /*gradiente linear de cima para baixo*/
+    background: linear-gradient(180deg, var(--verde-4) 0%, var(--verde-3) 80%, var(--verde-2) 100%);
+    position: relative;
+    padding: 60px 20px 80px 20px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/*efeito textura folha sutil no fundo opcional*/
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.tag-hero {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.hero h1 {
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.highlight-text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4.5rem; /*bem grande para destaque*/
+    color: var(--amarelo-2);
+    display: block;
+    margin-top: -10px;
+    transform: rotate(-2deg); /*leve inclinacao para dar naturalidade*/
+}
+
+.hero p {
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/*onda conectando hero e ingredientes*/
+.wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: var(--cor-fundo);
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    transform: scaleX(1.5);
+}
+
+/*ingredientes estilo organico*/
+.ingredients-section {
+    padding: 20px 20px 60px 20px;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title-organic {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: var(--verde-4);
+    position: relative;
+    display: inline-block;
+}
+
+/*detalhe sublinhado organico*/
+.title-organic::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: var(--amarelo-5);
+    border-radius: 10px;
+    margin-top: -10px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.organic-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*estilo base do card organico*/
+.organic-card {
+    background: white;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(22, 145, 82, 0.08); /*sombra esverdeada suave*/
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.02);
+}
+
+.organic-card:hover {
+    transform: translateY(-5px);
+}
+
+/*formatos de folha border radius assimetrico*/
+.leaf-left {
+    border-radius: 20px 60px 20px 60px;
+    border-left: 5px solid var(--amarelo-4);
+}
+
+.leaf-right {
+    border-radius: 60px 20px 60px 20px;
+    border-right: 5px solid var(--verde-2);
+}
+
+.leaf-center {
+    border-radius: 40px;
+    background: linear-gradient(135deg, #fff 0%, #f9fff0 100%); /*leve degradê verde*/
+    border: 2px dashed var(--verde-2);
+    text-align: center;
+}
+
+/*icones flutuantes*/
+.floating-icon {
+    font-size: 2.5rem;
+    background: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -35px; /*sai metade para fora*/
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/*posicionamento dos icones*/
+.leaf-left .floating-icon { left: 20px; border: 2px solid var(--amarelo-4); }
+.leaf-right .floating-icon { right: 20px; border: 2px solid var(--verde-2); }
+.leaf-center .floating-icon { 
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: -35px;
+    background: var(--verde-4);
+    color: white;
+}
+
+.card-content h3 {
+    font-family: "Forum", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: var(--verde-4);
+    margin-top: 20px; /*espaco para o icone*/
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.big-stat {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--verde-3);
+    font-family: 'Amatic SC', cursive;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+/*responsividade tablet desktop grid lado a lado*/
+@media (min-width: 768px) {
+    .organic-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+    /*destaque central ocupa 2 colunas*/
+    .leaf-center {
+        grid-column: span 2;
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+        /*destaque banana verde*/
+        .banana-feature {
+            background: linear-gradient(135deg, var(--verde-1), var(--verde-3));
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 25px rgba(100, 139, 19, 0.3);
+        }
+        .banana-feature h2 {
+            color: var(--amarelo-1);
+            font-family: 'Amatic SC', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        /*vitrine de produtos*/
+        .catalog-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .category-separator {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 40px 0 20px 0;
+        }
+        .cat-line { flex: 1; height: 2px; background: var(--verde-2); opacity: 0.3; }
+        .cat-title {
+            color: var(--verde-4);
+            font-family: 'Amatic SC', cursive;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /*2 colunas no mobile*/
+            gap: 15px;
+        }
+
+        /*card do produto estilo instagram clean*/
+        .prod-card {
+            background: white;
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #f0f0f0;
+        }
+        .prod-card:hover { transform: translateY(-5px); border-color: var(--amarelo-2); }
+        
+        .prod-info { padding: 10px 5px 0 5px; flex-grow: 1; display: flex; flex-direction: column; }
+        
+        .prod-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--cor-texto);
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+        
+        .prod-tag {
+            font-size: 0.7rem;
+            background: var(--verde-1);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 10px;
+            align-self: flex-start;
+            margin-bottom: 5px;
+        }
+        
+        .prod-sizes {
+            font-size: 0.75rem;
+            color: #888;
+            margin-top: auto;
+            border-top: 1px solid #eee;
+            padding-top: 5px;
+        }
+        
+        .stars { color: var(--amarelo-4); font-size: 0.8rem; margin-bottom: 5px; }
+
+        /*destaque campeao de vendas*/
+        .badge-best {
+            position: absolute;
+            top: 10px;
+            left: -5px;
+            background: var(--amarelo-5);
+            color: #000;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        /*rodape simples*/
+        .simple-footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #888;
+            font-size: 0.8rem;
+            background: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 400px) {
+            .product-grid { grid-template-columns: 1fr; }
+        }

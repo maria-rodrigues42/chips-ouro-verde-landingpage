@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos - Ouro Verde</title>
+    
+    <!--fontes google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/catalogo.css">
+    
+</head>
+<body>
+
+    <!--header flutuante-->
+    <header>
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../images/nome-marca-preto.png" alt="Ouro Verde">
+            </div>
+        </a>
+        
+        <a href="https://drive.google.com/file/d/1wlB4ZtG3E4DI_HDRIQBNwWwPU7xrz6Lf/view" target="_blank" class="btn-download-pdf">
+        <!--icone svg documento pdf-->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16L7 11H10V4H14V11H17L12 16ZM6 20H18V18H6V20Z" fill="white"/>
+            </svg>
+            <span>Baixar Catálogo</span>
+        </a>
+    </header>
+
+    <!--hero section renovada-->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Natural de <br><span class="highlight-text">Verdade</span></h1>
+            <p>Compromisso com a vida, com o planeta e com o sabor brasileiro.</p>
+        </div>
+        <!--onda decorativa no final do hero-->
+        <div class="wave-bottom"></div>
+    </section>
+
+    <!--ingredientes organicos-->
+    <section class="ingredients-section">
+        <div class="section-header">
+            <h2 class="title-organic">Nossos Segredos</h2>
+            <p>Ingredientes selecionados para sua saúde</p>
+        </div>
+
+        <div class="organic-grid">
+            <!--card 1 sal formato folhaesquerda-->
+            <div class="organic-card leaf-left">
+                <div class="floating-icon">🧂</div>
+                <div class="card-content">
+                    <h3>Sal Rosa do Himalaia</h3>
+                    <p>A opção mais pura. Mantém minerais essenciais, auxilia na hidratação e não passa por refinamento químico.</p>
+                </div>
+            </div>
+
+            <!--card 2 oleo formato folha direita-->
+            <div class="organic-card leaf-right">
+                <div class="floating-icon">🌴</div>
+                <div class="card-content">
+                    <h3>Óleo de Palma</h3>
+                    <p>Fritura sustentável e saudável. Rico em Vitamina E, A, K e Ômegas. Protege a saúde cardiovascular.</p>
+                </div>
+            </div>
+            
+            <!--card 3 destaque central-->
+            <div class="organic-card leaf-center">
+                <div class="floating-icon">💚</div>
+                <div class="card-content">
+                    <h3>Menos Calorias</h3>
+                    <div class="big-stat">78%</div>
+                    <p>Menos calorias que os chips comuns. <br><strong>100% Vegan & Natural.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--banana verde feature-->
+    <div class="banana-feature">
+        <div class="img-placeholder" style="width: 100%; height: 150px; background: rgba(0,0,0,0.1); border: none; margin-bottom: 15px;" alt="Banana Verde">FOTO BANANA VERDE</div>
+        <h2>O Segredo da Banana Verde</h2>
+        <p>Por conter alto teor de fibras e amido resistente, ela diminui a absorção de açúcar, favorecendo o equilíbrio da glicose e prevenindo diabetes.</p>
+    </div>
+
+    <!--vitrine de produtos-->
+    <div class="catalog-container">
+        
+        <!--categoria 1 bananinha chips-->
+        <div class="category-separator">
+            <span class="cat-title">Bananinha Chips</span>
+            <div class="cat-line"></div>
+        </div>
+        
+        <div class="product-grid">
+            <!--produto lemon pepper destaque-->
+            <div class="prod-card">
+                <div class="badge-best">CAMPEÃ 🏆</div>
+                <div class="img-placeholder ph-square" alt="Lemon Pepper">IMG LEMON</div>
+                <div class="prod-info">
+                    <span class="prod-tag">Salgada</span>
+                    <h4 class="prod-title">Lemon Pepper</h4>
+                    <div class="stars">★★★★★</div>
+                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">A queridinha! Limão e pimenta.</p>
+                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+                </div>
+            </div>
+
+            <!--produto acucar e canela-->
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Açúcar Canela">IMG CANELA</div>
+                <div class="prod-info">
+                    <span class="prod-tag" style="background: var(--amarelo-6);">Doce</span>
+                    <h4 class="prod-title">Açúcar e Canela</h4>
+                    <div class="stars">★★★★★</div>
+                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Clássico sabor com antioxidantes.</p>
+                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+                </div>
+            </div>
+
+            <!--produto coco e mel-->
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Coco e Mel">IMG COCO</div>
+                <div class="prod-info">
+                    <span class="prod-tag" style="background: var(--amarelo-6);">Doce</span>
+                    <h4 class="prod-title">Coco e Mel</h4>
+                    <div class="stars">★★★★★</div>
+                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">100% natural, sem açúcar refinado.</p>
+                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+                </div>
+            </div>
+
+            <!--produto cebola e salsa-->
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Cebola Salsa">IMG SALSA</div>
+                <div class="prod-info">
+                    <span class="prod-tag">Salgada</span>
+                    <h4 class="prod-title">Cebola e Salsa</h4>
+                    <div class="stars">★★★★★</div>
+                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Temperos frescos de qualidade.</p>
+                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+                </div>
+            </div>
+            
+             <!--produto paprica-->
+             <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Páprica">IMG PÁPRICA</div>
+                <div class="prod-info">
+                    <span class="prod-tag">Salgada</span>
+                    <h4 class="prod-title">Páprica Defumada</h4>
+                    <div class="stars">★★★★★</div>
+                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Leve sabor de pimentão espanhol.</p>
+                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+                </div>
+            </div>
+
+             <!--produto bacon-->
+             <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Bacon">IMG BACON</div>
+                <div class="prod-info">
+                    <span class="prod-tag">Salgada</span>
+                    <h4 class="prod-title">Bacon</h4>
+                    <div class="stars">★★★★★</div>
+                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Tempero delicioso de bacon defumado.</p>
+                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+                </div>
+            </div>
+        </div>
+
+        <!--categoria 2 batata mexicana-->
+        <div class="category-separator">
+            <span class="cat-title">Batata Mexicana</span>
+            <div class="cat-line"></div>
+        </div>
+
+        <div class="product-grid">
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Mexicana Picante">IMG PICANTE</div>
+                <div class="prod-info">
+                    <h4 class="prod-title">Mexicana Picante</h4>
+                    <div class="stars">★★★★★</div>
+                    <p style="font-size: 0.8rem; color: #666;">Pimenta com leveza natural.</p>
+                    <div class="prod-sizes">60g • 200g • 500g</div>
+                </div>
+            </div>
+            
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Mexicana Churrasco">IMG CHURRASCO</div>
+                <div class="prod-info">
+                    <h4 class="prod-title">Sabor Churrasco</h4>
+                    <div class="stars">★★★★★</div>
+                    <p style="font-size: 0.8rem; color: #666;">O preferido sabor brasileiro.</p>
+                    <div class="prod-sizes">60g • 200g • 500g</div>
+                </div>
+            </div>
+        </div>
+
+        <!--categoria 3 raizes batata doce e mandioca-->
+        <div class="category-separator">
+            <span class="cat-title">Raízes & Chips</span>
+            <div class="cat-line"></div>
+        </div>
+
+        <div class="product-grid">
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Doce Laranja">IMG LARANJA</div>
+                <div class="prod-info">
+                    <span class="prod-tag" style="background: var(--verde-3);">Nutritiva</span>
+                    <h4 class="prod-title">Batata Doce Laranja</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Rica em fibras, cálcio e potássio.</p>
+                    <div class="prod-sizes">100g a 1kg</div>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Doce Roxa">IMG ROXA</div>
+                <div class="prod-info">
+                    <span class="prod-tag" style="background: var(--verde-3);">Vitaminas</span>
+                    <h4 class="prod-title">Batata Doce Roxa</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Rica em vitaminas do complexo A, B, C e E.</p>
+                    <div class="prod-sizes">100g a 1kg</div>
+                </div>
+            </div>
+            
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Mix 3 Cores">IMG MIX</div>
+                <div class="prod-info">
+                    <h4 class="prod-title">Mix 3 Cores</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Rosada, Roxa e Laranja.</p>
+                    <div class="prod-sizes">100g a 1kg</div>
+                </div>
+            </div>
+
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Mandioquinha">IMG MANDIOQ</div>
+                <div class="prod-info">
+                    <h4 class="prod-title">Mandioquinha Chips</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Fresca, com sal do Himalaia.</p>
+                    <div class="prod-sizes">100g a 1kg</div>
+                </div>
+            </div>
+        </div>
+
+        <!--categoria 4 doces fit-->
+        <div class="category-separator">
+            <span class="cat-title">Doces Fit (Zero)</span>
+            <div class="cat-line"></div>
+        </div>
+        
+        <div class="product-grid">
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Barrinha">IMG BARRINHA</div>
+                <div class="prod-info">
+                    <span class="prod-tag" style="background: var(--verde-4);">Zero Açúcar</span>
+                    <h4 class="prod-title">Barrinha de Banana</h4>
+                    <p style="font-size: 0.8rem; color: #666;">100% fruta, 100% saudável.</p>
+                    <div class="prod-sizes">500g • 1kg</div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Bala">IMG BALA</div>
+                <div class="prod-info">
+                    <span class="prod-tag" style="background: var(--verde-4);">Zero Açúcar</span>
+                    <h4 class="prod-title">Bala de Banana</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Doce sem ser calórico.</p>
+                    <div class="prod-sizes">500g • 1kg</div>
+                </div>
+            </div>
+        </div>
+
+        <!--categoria 5 amendoins-->
+        <div class="category-separator">
+            <span class="cat-title">Amendoins</span>
+            <div class="cat-line"></div>
+        </div>
+
+        <div class="product-grid">
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Amendoim Bolinha">IMG BOLINHA</div>
+                <div class="prod-info">
+                    <h4 class="prod-title">Bolinha Tradicional</h4>
+                    <div class="prod-sizes">500g • 1kg • 5kg</div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Amendoim Alho">IMG ALHO</div>
+                <div class="prod-info">
+                    <h4 class="prod-title">Com Alho</h4>
+                    <p style="font-size: 0.8rem; color: #666;">Versões frito ou bolinha.</p>
+                    <div class="prod-sizes">500g • 1kg • 5kg</div>
+                </div>
+            </div>
+            <div class="prod-card">
+                <div class="img-placeholder ph-square" alt="Crocante Pimenta">IMG PIMENTA</div>
+                <div class="prod-info">
+                    <h4 class="prod-title">Crocante Pimenta</h4>
+                    <div class="prod-sizes">500g • 1kg • 5kg</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="simple-footer">
+        Ouro Verde © - Qualidade Natural
+    </div>
+
+</body>
+</html>
