@@ -1,24 +1,139 @@
+/* --- Okta Neue Thin (100) --- */
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('fonts/OktaNeue-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Okta Neue ExtraLight (200) --- */
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('fonts/OktaNeue-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Okta Neue Light (300) --- */
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('fonts/OktaNeue-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Okta Neue Regular (400) --- */
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('fonts/OktaNeue-Regular.woff2') format('woff2');
+    font-weight: 400; /* Normal */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Okta Neue Medium (500) --- */
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('fonts/OktaNeue-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Okta Neue SemiBold (600) --- */
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('fonts/OktaNeue-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Okta Neue Bold (700) --- */
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('fonts/OktaNeue-Bold.woff2') format('woff2');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Okta Neue Heavy (800) --- */
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('fonts/OktaNeue-Heavy.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* --- Okta Neue Black (900) --- */
+@font-face {
+    font-family: 'Okta Neue';
+    src: url('fonts/OktaNeue-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 
 /*variaveis de cor*/
 :root {
-    --cor-destaque: #FFC301; /*10% - botoes e ctas*/
-    --cor-secundaria: #169152; /*30% - identidade verde ouro verde*/
+    --cor-destaque: #FFC301; /* 10% - botoes e ctas */
+    --cor-secundaria: #169152; /* 30% - identidade verde ouro verde */
+    --cor-terciaria: #8FB001;
     --cor-texto: #333333;
-    --cor-fundo: #FAFAFA; /*60% - Base Limpa*/
-    --cor-fundo-suave: rgb(254, 249, 231); /*creme suave para secoes*/
+    --cor-fundo: #FAFAFA; /* 60% - Base Limpa */
+    --cor-fundo-suave: rgb(254, 249, 231); /* creme suave para secoes */
 }
 
-/*reset e base*/
 html {
-    /*scroll suave ao clicar nos links*/
-    scroll-behavior: smooth;
+    /* Deixa a rolagem suave, fica mais elegante */
+    scroll-behavior: smooth; 
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Poppins', sans-serif; color: var(--cor-texto); background: var(--cor-fundo); overflow-x: hidden; }
-img { max-width: 100%; display: block; }
-a { text-decoration: none; }
+section {
+    /* Isso cria uma margem invisível no topo de cada seção ao rolar */
+    /* Ajuste o valor 100px para o tamanho exato do seu menu */
+    scroll-margin-top: 100px; 
+}
+        
+/* Caso queira garantir para todos os IDs especificamente */
+#lojas, #catalogo, #quem-somos, #fale-conosco {
+    scroll-margin-top: 110px; /* Um pouco mais de espaço para respiro */
+}
+
+/* reset e base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Okta Neue', sans-serif;
+}
+
+body {
+    
+    color: var(--cor-texto); background: var(--cor-fundo);
+    overflow-x: hidden;
+}
+
+img { max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+span{
+    color: var(--cor-terciaria);
+    font-weight: 700;
+}
 
 /*cabecalho*/
 header {
@@ -55,40 +170,59 @@ header {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 40px 20px 60px 20px;
+    padding: 20px 20px 20px 20px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 .logo-hero {
     display: flex;
     justify-content: center;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 0px auto;
     filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
 }
 .logo-hero img{
-    height: 40dvh;
+    height: 30dvh;
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .hero h1 {
     font-size: 2.2rem;
     line-height: 1.2;
-    margin-bottom: 10px;
+}
+.hero h2{
+    color: var(--cor-destaque);
+    font-size: 1.3rem;
+    gap: 0;
 }
 .hero p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     opacity: 0.9;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
+
+.div-btn-cta{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 .btn-cta {
     background: var(--cor-destaque);
-    color: black;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: 700;
-    display: inline-block;
+    color: rgb(46, 35, 0);
+    padding: 10px 5px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 900;
     box-shadow: 0 4px 15px rgba(255, 195, 1, 0.4);
     transition: all 0.3s ease;
+    line-height: 1.3;
 }
 .btn-cta:active { transform: scale(0.95); }
 .btn-cta:hover { 
@@ -97,29 +231,90 @@ header {
     box-shadow: 0 6px 20px rgba(255, 195, 1, 0.6);
 }
 
-/*beneficios*/
+/*beneficios estilo mobile first*/
+/*beneficios estilo mobile first (lado a lado)*/
 .benefits {
-    padding: 40px 20px;
+    padding: 10px 15px; /*padding lateral menor pra ganhar espaco*/
     text-align: center;
     background: white;
+    margin-top: 0px;
+    border-radius: 20px 20px 0 0;
+    position: relative;
 }
-.benefit-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-}
-.benefit-item i {
-    font-size: 24px;
-    color: var(--cor-secundaria);
-    margin-bottom: 5px;
-}
-.benefit-item p { font-size: 13px; font-weight: 500; }
 
+.benefits-grid {
+    display: grid;
+    /* MUDANCA AQUI: 2 colunas no celular */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; /* espaco menor entre eles */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* opcional: fundo leve pra delimitar o item no celular */
+    padding: 10px; 
+}
+
+/*estilo do icone*/
+.icon-box {
+    font-size: 2rem; /*icone um pouco menor no mobile*/
+    color: var(--cor-secundaria);
+    margin-bottom: 10px;
+    background: var(--creme);
+    width: 60px; /*bolinha um pouco menor*/
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.benefit-item h3 {
+    font-size: 1rem; /*titulo ajustado*/
+    margin-bottom: 5px;
+    color: var(--texto);
+    line-height: 1.2;
+}
+
+.benefit-item p { 
+    font-size: 0.8rem; /*texto descritivo menor*/
+    color: #666;
+    line-height: 1.3;
+}
+
+/*computador vira 4 colunas (mantido)*/
+@media (min-width: 1024px) {
+    .benefits {
+        margin-top: 0px;
+        border-radius: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        padding: 50px 20px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .icon-box {
+        width: 70px;
+        height: 70px;
+        font-size: 2.5rem;
+    }
+
+    .benefit-item h3 { font-size: 1.1rem; }
+    .benefit-item p { font-size: 0.9rem; }
+}
 /*secao quem somos*/
 .about-us {
-    padding: 50px 20px;
-    background: #fff; /*fundo branco para contraste com secoes cremes*/
+    padding: 20px 20px;
+    background: #fff; /* fundo branco para contraste com secoes cremes */
     text-align: center;
 }
 
@@ -141,7 +336,7 @@ header {
     line-height: 1.8;
     color: var(--cor-texto);
     margin-bottom: 20px;
-    text-align: justify; /*texto justificado para visual de jornal/livro*/
+    text-align: justify; /* texto justificado para visual de jornal/livro */
 }
 
 /*destaques no texto*/
@@ -167,9 +362,9 @@ header {
 }
 
 .stat-num {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Okta Neue';
     font-size: 2.5rem;
-    color: var(--cor-destaque); /*amarelo*/
+    color: var(--cor-destaque); /* amarelo */
     font-weight: 700;
     line-height: 1;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
@@ -178,7 +373,7 @@ header {
 .stat-desc {
     font-size: 12px;
     font-weight: 600;
-    color: var(--cor-secundaria); /*verde*/
+    color: var(--cor-secundaria); /* verde */
     text-transform: uppercase;
     margin-top: 5px;
     line-height: 1.2;
@@ -199,12 +394,18 @@ header {
     padding: 40px 20px;
     text-align: center;
 }
+
+.span{
+    color: var(--cor-terciaria);
+    font-weight: 700;
+}
 .section-title {
     color: var(--cor-secundaria);
     font-size: 1.8rem;
     margin-bottom: 10px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Okta Neue';
     font-weight: 700;
+    text-align: center;
 }
 .catalog-box {
     background: white;
@@ -227,6 +428,7 @@ header {
     background: var(--cor-secundaria);
     color: white;
 }
+
 
 /*---mapa---*/
 .store-locator {
@@ -267,10 +469,11 @@ header {
 .map-search button {
     background: var(--cor-secundaria);
     border: none;
-    width: 100px;
+    width: auto;
     border-radius: 0 30px 30px 0;
     color: white;
     cursor: pointer;
+    padding: .7rem;
 }
 .map-search button i{
     font-size: 1.3rem;
@@ -332,115 +535,428 @@ header {
     background-color: #f0f9f4;
     color: var(--cor-secundaria);
 }
-/*formulario de contato*/
+
+/* =========================================
+   SEÇÃO FALE CONOSCO (B2B STYLE)
+   ========================================= */
+
 .contact-section {
-    padding: 40px 20px;
-    background: var(--cor-fundo-suave); /*fundo creme*/
+    padding: 80px 20px;
+    background-color: var(--cor-fundo); /* Usa a variável global cinza claro */
+    position: relative;
+}
+
+.contact-section .section-title {
     text-align: center;
-}
-
-.contact-section p {
-    font-size: 14px;
-    margin-bottom: 25px;
-    color: #555;
-}
-
-.form-contato {
-    background: white;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 5px;
     color: var(--cor-secundaria);
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
-.form-group input, 
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    background: #fafafa;
-}
-
-.form-group input:focus, 
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--cor-secundaria);
+/* O Container Principal (A "Caixa" que segura tudo) */
+.contact-wrapper {
     background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08); /* Sombra elegante */
+    overflow: hidden; /* Arredonda os filhos */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Mobile: Um em cima do outro */
 }
 
-.btn-enviar {
-    width: 100%;
-    padding: 15px;
-    background: var(--cor-destaque);
-    color: #000;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.2s;
-}
-
-.btn-enviar:hover {
-    background: #e6b000;
-}
-
-/*trust badges e parceiros atualizado*/
-.trust-badges {
+/* --- COLUNA ESQUERDA (VERDE) --- */
+/* --- coluna esquerda (verde) renovada --- */
+.contact-info {
+    background-color: #00210E; /* verde da marca */
+    color: var(--cor-texto);
     padding: 30px 20px;
-    text-align: center;
-    background: #fff;
-    border-top: 1px solid #eee;
+    position: relative;
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
 }
 
-.badge-container {
+/* padrao de fundo sutil (opcional, da um charme) */
+.contact-info::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.info-content {
+    position: relative;
+
+    width: 100%;
+}
+
+.contact-info h3 {
+    font-family: 'Okta Neue', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800; /* bem grosso */
+    color: var(--cor-destaque);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    max-width: 90%;
+    color:rgb(254, 249, 231)
+}
+
+/* lista de contatos */
+.info-list {
     display: flex;
     flex-direction: column;
+    gap: 25px;
+}
+
+.info-item {
+    display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.tech-badge {
-    font-weight: bold;
-    color: #444;
-    border: 2px solid #ddd;
-    padding: 8px 15px;
-    border-radius: 8px;
-    display: inline-flex;
-    align-items: center;
-}
-
-/*botao natural tech*/
-.btn-parceiro {
-    font-size: 12px;
-    color: var(--cor-secundaria);
-    border: 1px solid var(--cor-secundaria);
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-weight: 600;
-    transition: all 0.2s;
-}
-
-.btn-parceiro:hover {
-    background: var(--cor-secundaria);
+    gap: 15px;
+    text-decoration: none;
     color: white;
+    transition: transform 0.3s ease;
+}
+
+/* efeito ao passar o mouse no item */
+.info-item:hover {
+    transform: translateX(10px);
+}
+
+/* bolinha do icone */
+.icon-circle {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.15); /* branco transparente */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
+}
+
+
+/* destaque para o whatsapp ao passar mouse */
+.info-item:hover .icon-circle {
+    background: white;
+    color: var(--verde);
+}
+.info-item:hover .icon-circle i {
+    color: var(--verde);
+}
+
+/* textos do item */
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text small {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.info-text span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* area social no final */
+.contact-social {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-social span {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.social-icons a:hover {
+    background: var(--amarelo);
+    color: black;
+}
+
+/* Lista de Ícones e Textos */
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+    
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: transform 0.3s;
+}
+
+.info-item:hover { transform: translateX(10px); }
+
+.info-item i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: var(--cor-destaque); /* Ícone amarelo */
+}
+
+/* Redes Sociais Internas */
+.contact-social {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    
+}
+.contact-social a {
+    width: 45px; height: 45px;
+    background: white;
+    color: var(--cor-secundaria);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.contact-social a:hover {
+    background: var(--cor-destaque);
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* --- COLUNA DIREITA (FORMULÁRIO) --- */
+.contact-form {
+    padding: 50px 40px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-title {
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: none; /* Esconde título duplicado no mobile */
+}
+
+/* Inputs e Labels */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+.input-group input, 
+.input-group textarea {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--cor-secundaria);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(22, 145, 82, 0.1);
+}
+
+/* Grid para Inputs Lado a Lado */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Botão Enviar */
+.btn-submit {
+    margin-top: 10px;
+    background: var(--cor-destaque);
+    color: black;
+    border: none;
+    padding: 18px;
+    font-weight: 800;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 195, 1, 0.3);
+}
+
+.btn-submit:hover {
+    background: #ffcd2e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 195, 1, 0.5);
+}
+
+/* --- MEDIA QUERIES (TABLET & DESKTOP) --- */
+@media (min-width: 900px) {
+    .contact-wrapper {
+        flex-direction: row; /* Coloca lado a lado no PC */
+        min-height: 600px; /* Altura mínima para ficar bonito */
+    }
+
+    .contact-info {
+        flex: 1; /* Ocupa 40% */
+        padding: 60px;
+    }
+
+    .contact-form {
+        flex: 1.4; /* Ocupa 60% */
+        padding: 60px;
+        justify-content: center;
+    }
+
+    .form-title { display: block; }
+
+    .form-row {
+        flex-direction: row; /* Inputs na mesma linha */
+    }
+    
+    /* Faz os inputs dentro da row dividirem o espaço */
+    .form-row .input-group {
+        flex: 1; 
+    }
+}
+
+/* --- SEÇÃO PROVA SOCIAL --- */
+.social-proof {
+    padding: 60px 20px;
+    background: #f9f9f9; /* Fundo levemente diferente pra separar */
+    text-align: center;
+}
+
+.social-proof .section-title {
+    color: var(--verde);
+    margin-bottom: 40px;
+}
+
+/* Grid das Avaliações */
+.reviews-grid {
+    display: grid;
+    /* Começa com 1 coluna no mobile */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Cartão da Avaliação (Onde fica o print) */
+.review-card {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.review-card:hover {
+    transform: translateY(-5px); /* Efeito de subir ao passar mouse */
+}
+
+/* Ajuste da Imagem do Print */
+.review-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain; /* Garante que o print não distorça */
+}
+
+/* Rodapé da seção (Badge Google) */
+.google-badge {
+    margin-top: 40px;
+    display: inline-block;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid #eee;
+}
+
+.google-badge p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.google-badge .stars {
+    color: var(--amarelo);
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+/* --- VERSÃO DESKTOP --- */
+@media (min-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas lado a lado */
+    }
 }
 
 /*footer*/
@@ -452,24 +968,57 @@ footer {
     font-size: 14px;
 }
 
-/*whatsapp flutuante*/
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
+/* Estilo Base para todos os botões flutuantes */
+.float-btn {
     right: 20px;
-    background-color: #25d366;
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
     z-index: 2000;
     animation: pulse 2s infinite;
+    text-decoration: none;
 }
+
+.botoes-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 13dvh;
+    right: 20px;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-float {
+    background-color: #25d366;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+/* Botão do Instagram */
+.instagram-float {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0 4px 15px rgba(214, 36, 159, 0.4);
+}
+
+/* Botão do Facebook */
+.facebook-float {
+    background-color: #1877F2;
+    box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
+}
+
+/* Animação de Pulsação */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }

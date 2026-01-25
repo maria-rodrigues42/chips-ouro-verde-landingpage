@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Chips Ouro Verde - 100% Naturais e Artesanais. Peça agora!">
-    <title>Chips Ouro Verde | Simplesmente Saudável</title>
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <title>Chips Ouro Verde | Snacks Naturais para Revenda</title>
+
+    <link rel="preconnect" href="https://a.basemaps.cartocdn.com">
+    <link rel="preconnect" href="https://b.basemaps.cartocdn.com">
+    <link rel="preconnect" href="https://c.basemaps.cartocdn.com">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="stylesheet" href="./style/main.css">
@@ -27,86 +27,129 @@
         <div class="logo-hero">
             <img src="./images/logo-chips-ouro-verde.png" alt="Logo Ouro Verde">
         </div>
-        <h1>Para o seu <br><span style="color:var(--cor-destaque)">Melhor Momento</span></h1>
-        <p>Chips 100% Naturais, Artesanais e de Plantio Próprio.</p>
-        <a href="#lojas" class="btn-cta">Encontrar Lojas ↓</a>
+
+        <div class="hero-title">
+            <h1>Chips Ouro Verde</h1>
+            <h2><span>Do nosso plantio direto para a sua prateleira.</span></h2>
+        </div>
+
+        <div class="div-btn-cta">
+            <a href="#lojas" class="btn-cta">Onde Encontrar</a>
+            <a href="#catalogo" class="btn-cta" style="color: rgb(41, 58, 0); background-color: rgb(162, 231, 0); box-shadow: 0 4px 15px rgba(145, 207, 0, 0.4);">Quero Ver o Catálogo</a>
+        </div>
     </section>
 
     <section class="benefits">
-        <div class="benefit-grid">
+        <div class="benefits-grid">
+            
             <div class="benefit-item">
-                <i class="fas fa-leaf"></i>
-                <p>100% Natural</p>
+                <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                <h3>Alto Giro</h3>
+                <p>Produto validado com alta saída no PDV.</p>
             </div>
+
             <div class="benefit-item">
-                <i class="fas fa-tractor"></i>
-                <p>Plantio Próprio</p>
+                <div class="icon-box"><i class="fas fa-hand-holding-usd"></i></div>
+                <h3>Margem Atrativa</h3>
+                <p>Lucratividade real para o seu negócio.</p>
             </div>
+
             <div class="benefit-item">
-                <i class="fas fa-heart"></i>
-                <p>Artesanal</p>
+                <div class="icon-box"><i class="fas fa-leaf"></i></div>
+                <h3>Tendência Saudável</h3>
+                <p>O setor que mais cresce no varejo.</p>
             </div>
+
+            <div class="benefit-item">
+                <div class="icon-box"><i class="fas fa-truck-fast"></i></div>
+                <h3>Compra Direta</h3>
+                <p>Negocie direto com a fábrica, sem burocracia.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="products" id="catalogo">
+        <h2 class="section-title">Nossos Sabores</h2>
+        <img src="./images/foto-produto.png" alt=""
+        style="
+        border-radius: 30px;
+        border: solid var(--cor-destaque) 5px;
+        margin-bottom: 30px;
+        ">
+        <p>Do campo para sua gôndola, oferecemos um mix completo. Nossos carros-chefe são os <span>Chips de Banana e Raízes</span> (Mandioca, Batata Doce e Inglesa) preparados com Sal do Himalaia e Óleo de Palma. Inovamos com a linha <span>Batata Mexicana</span> e sabores como Lemon Pepper e Queijo Nacho. Completam o portfólio nossos <span>Doces de Banana Zero</span>, <span>Pipocas Artesanais</span> e <span></span>Amendoins selecionados</span>. Variedade, crocância e ingredientes 100% naturais.</p>
+        
+        <div class="catalog-box">
+            <h3 style="font-weight: 900; padding-bottom: 15px">Conheça Nossa Linha Completa</h3>
+            
+            <a href="./pages/catalogo.html" class="btn-cta" style="margin-bottom: 15px; width: 100%; max-width: 280px; display: inline-block;">
+                Ver Catálogo Online
+            </a>
+
+            <a href="./docs/catalogo-ouro-verde.pdf" class="btn-cta" style="margin-bottom: 15px; max-width: 280px; display: inline-block; background-color: var(--cor-terciaria); box-shadow: 0 4px 15px rgba(100, 100, 100, 0.4); padding: 10px 20px">
+                <i class="fas fa-file-pdf"></i> Catálogo Completo
+            </a>
+            
+            
         </div>
     </section>
 
     <!--secao quem somos-->
     <section class="about-us" id="quem-somos">
-        <h2 class="section-title">Nossa História</h2>
-        <p class="about-subtitle">De pessoa para pessoa. Da nossa família para a sua.</p>
+        <h2 class="section-title">Quem Somos</h2>
         
         <div class="about-content">
             <div class="about-text">
                 <p>
-                    A <strong>Ouro Verde</strong> nasceu do desejo de entregar uma alimentação segura e saborosa. Com quase <strong>25 anos de experiência</strong> no mercado alimentício, somos uma empresa familiar que valoriza a transparência e o cuidado em cada etapa.
+                    A <span>Chips Ouro Verde</span> nasceu de um propósito familiar e hoje acumula quase 25 anos de experiência no setor alimentício. O que começou com o compromisso de oferecer o melhor para a nossa casa, evoluiu para levar saúde e sabor à mesa de milhares de brasileiros.
                 </p>
                 <p>
-                    Nosso grande diferencial está na origem: temos <strong>fabricação e plantio próprios</strong>. Isso significa que cuidamos desde a semente na terra até o pacote crocante que chega em suas mãos, garantindo um produto fresco, sem conservantes e feito com amor.
+                    Em 2025, celebramos um marco especial: 6 anos de dedicação exclusiva à produção de chips. Nosso grande diferencial está na origem: trabalhamos com fabricação e plantio próprios. Isso significa que controlamos rigorosamente cada etapa, do cultivo no campo até o pacote final, garantindo frescor e segurança alimentar.
                 </p>
                 <p>
-                    Em 2025, completamos 7 anos dedicados exclusivamente à nossa linha de Chips, inovando com sabores como <em>Lemon Pepper</em> e <em>Sal do Himalaia</em>, sempre respeitando a natureza e a sua saúde.
+                    Unimos a experiência de nossos fundadores com a inovação da nova geração , criando produtos que respeitam o planeta e constroem conexões verdadeiras com nossos parceiros e clientes.
                 </p>
             </div>
             
-            <!--grid de estatisticas rapidas-->
-            <div class="about-stats">
-                <div class="stat-box">
-                    <span class="stat-num">25+</span>
-                    <span class="stat-desc">Anos de<br>História</span>
+        <section class="benefits">
+            <div class="benefits-grid">
+                
+                <div class="benefit-item">
+                    <div class="icon-box">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <h3>Produção Própria</h3>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-num">100%</span>
-                    <span class="stat-desc">Plantio<br>Próprio</span>
+
+                <div class="benefit-item">
+                    <div class="icon-box">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Zero Conservantes</h3>
                 </div>
-                <div class="stat-box">
-                    <span class="stat-num">7</span>
-                    <span class="stat-desc">Anos de<br>Chips</span>
+
+                <div class="benefit-item">
+                    <div class="icon-box">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Empresa Familiar</h3>
                 </div>
+
+                <div class="benefit-item">
+                    <div class="icon-box">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Produto Vegano<br>e Natural</h3>
+                </div>
+
             </div>
+        </section>
+
+
         </div>
     </section>
 
-    <section class="products">
-        <h2 class="section-title">Nossos Sabores</h2>
-        <p>Do campo direto para sua casa. Descubra a crocância da batata doce, mandioca, banana e muito mais.</p>
-        
-        <div class="catalog-box">
-            <i class="fas fa-book-open" style="font-size: 45px; color: var(--cor-secundaria); margin-bottom:15px;"></i>
-            
-            <h3>Conheça Nossa Linha Completa</h3>
-            <p style="font-size:13px; margin-bottom:20px; color:#666;">
-                Veja fotos, detalhes e tamanhos disponíveis de todos os nossos produtos.
-            </p>
-            
-            <a href="./pages/catalogo.html" class="btn-cta" style="margin-bottom: 15px; width: 100%; max-width: 280px; display: inline-block;">
-                Ver Catálogo Online
-            </a>
-            
-            <br> <a href="https://drive.google.com/file/d/1wlB4ZtG3E4DI_HDRIQBNwWwPU7xrz6Lf/view" target="_blank" style="font-size: 12px; color: #666; text-decoration: underline;">
-                <i class="fas fa-file-pdf"></i> Prefiro baixar o arquivo PDF
-            </a>
-        </div>
-    </section>
-
+    <!--mapa-->
     <section class="store-locator" id="lojas">
         <h2 class="section-title">Onde Encontrar</h2>
         <p style="text-align:center; margin-bottom:20px; font-size:14px;">Digite seu endereço ou bairro para achar o ponto de venda mais próximo.</p>
@@ -127,37 +170,121 @@
 
     <section class="contact-section" id="fale-conosco">
         <h2 class="section-title">Fale Conosco</h2>
-        <p>Dúvidas, sugestões ou parcerias? Envie uma mensagem!</p>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="info-content">
+                    <h3>VAMOS CRESCER JUNTOS?</h3>
+                    <p>Quer revender ou tem dúvidas? Fale direto com nosso time.</p>
+                    
+                    <div class="info-list">
+                        <a href="https://wa.me/5511955507965" class="info-item destaque" target="_blank">
+                            <div class="icon-circle">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="info-text">
+                                <small>WhatsApp Comercial</small>
+                                <span>(11) 95550-7965</span>
+                            </div>
+                        </a>
+                        
+                        <div class="info-item">
+                            <div class="icon-circle">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <small>E-mail</small>
+                                <span>comercial@chipsouroverde.com.br</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="icon-circle">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-text">
+                                <small>Localização</small>
+                                <span>Guarulhos - SP</span>
+                            </div>
+                        </div>
+                    </div>
 
-        <form class="form-contato">
-            <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" placeholder="Seu nome completo">
+                    <div class="contact-social">
+                        <span>Siga a gente:</span>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="seu@email.com">
-            </div>
-            <div class="form-group">
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
-            </div>
-            <button type="button" class="btn-enviar">Enviar Mensagem</button>
-        </form>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" required placeholder="Seu nome">
+                    </div>
+                    <div class="input-group">
+                        <label for="empresa">Nome da Loja/Empresa</label>
+                        <input type="text" id="empresa" placeholder="Nome do seu negócio">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="cnpj">CNPJ (Opcional)</label>
+                        <input type="text" id="cnpj" placeholder="00.000.000/0001-00">
+                    </div>
+                    <div class="input-group">
+                        <label for="whatsapp">WhatsApp / Telefone *</label>
+                        <input type="tel" id="whatsapp" required placeholder="(11) 99999-9999">
+                    </div>
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="4" placeholder="Gostaria de saber mais sobre revenda..."></textarea>
+                </div>
+
+                <button type="button" class="btn-submit">ENVIAR MENSAGEM</button>
+            </form>
+        </div>
     </section>
 
-    <div class="trust-badges">
-        <p style="font-size:12px; color:#888; margin-bottom:15px; font-weight: 600;">PARCEIROS & EVENTOS</p>
+    <section class="social-proof">
+        <h2 class="section-title">O que dizem nossos parceiros e clientes</h2>
         
-        <div class="badge-container">
-            <div class="tech-badge">
-                <i class="fas fa-calendar-check" style="margin-right:5px;"></i> NATURALTECH 2025
+        <div class="reviews-grid">
+            
+            <div class="review-card">
+                <img src="./images/avaliacoes/review1.png" alt="Avaliação Google - Leticia Tonisso">
             </div>
-            <a href="https://naturaltech.com.br/" target="_blank" class="btn-parceiro">
-                Visitar Site <i class="fas fa-external-link-alt"></i>
-            </a>
+
+            <div class="review-card">
+                <img src="./images/avaliacoes/review2.png" alt="Avaliação Google - Cliente 2">
+            </div>
+
+            <div class="review-card">
+                <img src="./images/avaliacoes/review3.png" alt="Avaliação Google - Cliente 3">
+            </div>
+
+            <div class="review-card">
+                <img src="./images/avaliacoes/review4.png" alt="Avaliação Google - Cliente 3">
+            </div>
+
+            <div class="review-card">
+                <img src="./images/avaliacoes/review5.png" alt="Avaliação Google - Cliente 3">
+            </div>
+
+
         </div>
-    </div>
+
+        <div class="google-badge">
+            <p>Veja mais avaliações no <strong>Google Meu Negócio</strong></p>
+            <div class="stars">★★★★★</div>
+        </div>
+    </section>
 
     <footer>
         <p>© 2026 Chips Ouro Verde. Todos os direitos reservados.</p>
@@ -166,9 +293,23 @@
         </p>
     </footer>
 
-    <a href="https://wa.me/5511955507965?text=Olá, Ouro Verde!" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <div class="botoes-contato">
+            <!-- Link do Facebook -->
+        <a href="https://www.facebook.com/people/Chips-Ouro-Verde/61581605133432/" class="float-btn facebook-float" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+
+        <!-- Link do Instagram -->
+        <a href="https://www.instagram.com/chipsouroverde/" class="float-btn instagram-float" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Link do WhatsApp -->
+        <a href="https://wa.me/5511955507965?text=Olá, Ouro Verde!" class="float-btn whatsapp-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="./script/lojas.js"></script>
