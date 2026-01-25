@@ -3,515 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Produtos - Ouro Verde</title>
+    <title>Catálogo Completo | Chips Ouro Verde</title>
     
-    <!--fontes google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/catalogo.css"> </head>
+    <link rel="stylesheet" href="../style/catalogo.css">
+</head>
 <body>
 
-    <!--header flutuante-->
     <header>
-        <a href="../index.html">
-            <div class="logo">
+        <div class="logo">
+            <a href="../index.html">
                 <img src="../images/nome-marca-preto.png" alt="Ouro Verde">
-            </div>
-        </a>
-        
-        <a href="https://drive.google.com/file/d/1wlB4ZtG3E4DI_HDRIQBNwWwPU7xrz6Lf/view" target="_blank" class="btn-download-pdf">
-        <!--icone svg documento pdf-->
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 16L7 11H10V4H14V11H17L12 16ZM6 20H18V18H6V20Z" fill="white"/>
-            </svg>
-            <span>Baixar Catálogo</span>
-        </a>
+            </a>
+        </div>
+        <div class="header-right">
+            <a href="https://wa.me/5511955507965" class="btn-cta btn-whatsapp-header">
+                <i class="fab fa-whatsapp"></i> Falar com Vendas
+            </a>
+        </div>
     </header>
 
-    <!--hero section renovada-->
-    <section class="hero">
+    <section class="catalog-hero">
         <div class="hero-content">
-            <h1>Natural de <br><span class="highlight-text">Verdade</span></h1>
-            <p>Compromisso com a vida, com o planeta e com o sabor brasileiro.</p>
-        </div>
-        <!--onda decorativa no final do hero-->
-        <div class="wave-bottom"></div>
-    </section>
-
-    <!--ingredientes organicos-->
-    <section class="ingredients-section">
-        <div class="section-header">
-            <h2 class="title-organic">Nossos Segredos</h2>
-            <p>Ingredientes selecionados para sua saúde</p>
-        </div>
-
-        <div class="organic-grid">
-            <!--card 1 sal formato folhaesquerda-->
-            <div class="organic-card leaf-left">
-                <div class="floating-icon">
-                    <img src="../images/icone-sal-himalaia.jpeg" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Sal Rosa do Himalaia</h3>
-                    <p>A opção mais pura. Mantém minerais essenciais, auxilia na hidratação e não passa por refinamento químico.</p>
-                </div>
-            </div>
-
-            <!--card 2 oleo formato folha direita-->
-            <div class="organic-card leaf-right">
-                <div class="floating-icon">
-                    <img src="../images/icone-oleo-de-palma.png" alt="">
-                </div>
-                <div class="card-content">
-                    <h3>Óleo de Palma</h3>
-                    <p>Fritura sustentável e saudável. Rico em Vitamina E, A, K e Ômegas. Protege a saúde cardiovascular.</p>
-                </div>
-            </div>
-            
-            <!--card 3 destaque central-->
-            <div class="organic-card leaf-center">
-                <div class="floating-icon">💚</div>
-                <div class="card-content">
-                    <h3>Menos Calorias</h3>
-                    <div class="big-stat">78%</div>
-                    <p>Menos calorias que os chips comuns. <br><strong>100% Vegan & Natural.</strong></p>
-                </div>
-            </div>
+            <h1>Nossos Sabores</h1>
+            <p>Do campo para a sua gôndola. Confira nossa linha completa de snacks naturais, doces e amendoins.</p>
         </div>
     </section>
 
-    <!--banana verde feature-->
-    <div class="banana-feature">
-        <img class="img-card-catalogo" src="../images/produtos/banana-verde.png" alt="imagem de banana verde">
-        <h2>O Segredo da Banana Verde</h2>
-        <p>Por conter alto teor de fibras e amido resistente, ela diminui a absorção de açúcar, favorecendo o equilíbrio da glicose e prevenindo diabetes.</p>
-    </div>
+    <nav class="cat-nav">
+        <div class="nav-wrapper">
+            <a href="#banana" class="nav-pill">Chips de Banana</a>
+            <a href="#batata-doce" class="nav-pill">Batata Doce</a>
+            <a href="#batata" class="nav-pill">Batata</a>
+            <a href="#mexicana" class="nav-pill">Mexicana</a>
+            <a href="#raizes" class="nav-pill">Mandioca</a>
+            <a href="#doces" class="nav-pill">Doces</a>
+            <a href="#pipoca" class="nav-pill">Pipoca</a>
+            <a href="#amendoim" class="nav-pill">Amendoim</a>
+            <a href="#xerem" class="nav-pill">Farinhas</a>
+        </div>
+    </nav>
 
-    <!--vitrine de produtos-->
     <div class="catalog-container">
-        
-        <!--categoria 1 bananinha chips-->
-        <div class="category-separator">
-            <span class="cat-title">Bananinha Chips</span>
-            <div class="cat-line"></div>
-        </div>
-        
-        <div class="product-grid">
 
-            <!--produto acucar e canela-->
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-banana-acucar-e-canela.png" alt="imagem de chips de banana sabor acucarr e canela">
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--amarelo-6);">Doce</span>
-                    <h4 class="prod-title">Açúcar e Canela</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Clássico sabor com antioxidantes.</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
-                </div>
-            </div>
-
-            <!--produto coco e mel-->
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-banana-coco-e-mel.png" alt="imagem de chips de banana sabor coco e mel">
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--amarelo-6);">Doce</span>
-                    <h4 class="prod-title">Coco e Mel</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">100% natural, sem açúcar refinado.</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
-                </div>
-            </div>
-
-            <!--produto tradicioonal-->
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-banana-tradicional.png" alt="imagem de chips de banana sabor tradicional
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--amarelo-6);">Doce</span>
-                    <h4 class="prod-title">Tradicional</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">O classico  e puro saborr da bananinha chips!</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
-                </div>
-            </div>
-            <!--produto tradicioonal com acucar-->
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-banana-tradicional-acucar.png" alt="imagem de chips de banana sabor tradicional
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--amarelo-6);">Doce</span>
-                    <h4 class="prod-title">Tradicional com Açúcar</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">O classico  e puro saborr da bananinha chips!</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
-                </div>
-            </div>
-
-            <!--produto lemon pepper destaque-->
-            <div class="prod-card">
-                <div class="badge-best">CAMPEÃ 🏆</div>
-                <img class="img-card-catalogo" src="../images/produtos/chips-banana-lemonpepper.png" alt="imagem de chips de banana sabor lemon pepper">
-                <div class="prod-info">
-                    <span class="prod-tag">Salgada</span>
-                    <h4 class="prod-title">Lemon Pepper</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">A queridinha! Limão e pimenta.</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
-                </div>
-            </div>
-
-            
-
-            <!--produto cebola e salsa-->
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-banana-cebola-e-salsa.png" alt="imagem de chips de banana sabor cebola e salsa">
-                <div class="prod-info">
-                    <span class="prod-tag">Salgada</span>
-                    <h4 class="prod-title">Cebola e Salsa</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Temperos frescos de qualidade.</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
-                </div>
+        <section id="banana" class="product-category">
+            <div class="cat-header">
+                <h2>Chips de Banana</h2>
+                <span class="pack-size"><i class="fas fa-box"></i> Embalagens: 200g • 500g • 3kg</span>
             </div>
             
-             <!--produto paprica-->
-             <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-banana-paprica.png" alt="imagem de chips de banana sabor paprica">
-                <div class="prod-info">
-                    <span class="prod-tag">Salgada</span>
-                    <h4 class="prod-title">Páprica</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Leve sabor de pimentão espanhol.</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+            <div class="product-grid">
+                <div class="prod-card">
+                    <img src="../images/produtos/banana-natural.png" alt="Natural" class="prod-img">
+                    <h3>Natural</h3>
+                    <p>O clássico da banana verde, crocante e saboroso, sem adição de sal.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/banana-salgada.png" alt="Salgada" class="prod-img">
+                    <h3>Salgada</h3>
+                    <p>Banana chips temperada com sal rosa do Himalaia, equilíbrio perfeito para o dia a dia.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/banana-doce.png" alt="Açúcar e Canela" class="prod-img">
+                    <h3>Açúcar e Canela</h3>
+                    <p>Levemente adocicado, com o toque especial da canela em pó.</p>
+                </div>
+                <div class="prod-card">
+                    <span class="badge campeao">Campeão de Vendas</span>
+                    <img src="../images/produtos/banana-lemon.png" alt="Lemon Pepper" class="prod-img">
+                    <h3>Lemon Pepper</h3>
+                    <p>Temperado com um mix irresistível de limão e pimenta.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/banana-salsa.png" alt="Salsa e Cebola" class="prod-img">
+                    <h3>Salsa & Cebola</h3>
+                    <p>Feito com salsa desidratada e cebola em pó de qualidade premium.</p>
+                </div>
+                <div class="prod-card">
+                    <span class="badge novidade">Novidade</span>
+                    <img src="../images/produtos/banana-nacho.png" alt="Queijo Nacho" class="prod-img">
+                    <h3>Queijo Nacho</h3>
+                    <p>Novo sabor irresistível, inspirado no melhor da culinária mexicana.</p>
+                </div>
+                <div class="prod-card">
+                    <span class="badge novidade">Novidade</span>
+                    <img src="../images/produtos/banana-paprica.png" alt="Páprica Defumada" class="prod-img">
+                    <h3>Páprica Defumada</h3>
+                    <p>Crocante com o sabor marcante da páprica defumada.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/banana-picante.png" alt="Páprica Picante" class="prod-img">
+                    <h3>Páprica Picante</h3>
+                    <p>Um toque picante para quem gosta de intensidade.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/banana-bacon.png" alt="Bacon" class="prod-img">
+                    <h3>Bacon</h3>
+                    <p>Temperado com aroma de bacon defumado, cheio de sabor.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/banana-oregano.png" alt="Orégano" class="prod-img">
+                    <h3>Orégano</h3>
+                    <p>Com orégano importado, trazendo frescor e intensidade.</p>
                 </div>
             </div>
+        </section>
 
-             <!--produto bacon-->
-             <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-banana-bacon.png" alt="imagem de chips de banana sabor bacon">
-                <div class="prod-info">
-                    <span class="prod-tag">Salgada</span>
-                    <h4 class="prod-title">Bacon</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Tempero delicioso de bacon defumado.</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+        <section id="batata-doce" class="product-category">
+            <div class="cat-header">
+                <h2>Chips de Batata Doce</h2>
+                <span class="pack-size"><i class="fas fa-box"></i> Embalagens: 200g • 500g • 1kg</span>
+            </div>
+            <div class="product-grid">
+                <div class="prod-card">
+                    <img src="../images/produtos/doce-rosada.png" alt="Rosada" class="prod-img">
+                    <h3>Rosada</h3>
+                    <p>Fonte de fibras e nutrientes, sabor marcante e natural.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/doce-mostarda.png" alt="Mostarda e Mel" class="prod-img">
+                    <h3>Rosada Mostarda & Mel</h3>
+                    <p>Uma combinação surpreendente de doçura e intensidade.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/doce-roxa.png" alt="Roxa" class="prod-img">
+                    <h3>Roxa</h3>
+                    <p>A versão mais rica em antioxidantes e vitaminas do complexo A, B, C e E.</p>
+                </div>
+                <div class="prod-card">
+                    <span class="badge campeao">Sucesso</span>
+                    <img src="../images/produtos/doce-mix.png" alt="Mix 3 Cores" class="prod-img">
+                    <h3>Mix 3 Cores</h3>
+                    <p>Chips de batata doce rosada, roxa e laranja em um combo cheio de sabor e energia.</p>
                 </div>
             </div>
+        </section>
 
-            
-            <!--produto oregano-->
-             <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chps-banana-oregano.png" alt="imagem de chips de banana sabor oregano">
-                <div class="prod-info">
-                    <span class="prod-tag">Salgada</span>
-                    <h4 class="prod-title">Oregano</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">Tempero delicioso de oregano.</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+        <section id="batata" class="product-category">
+            <div class="cat-header">
+                <h2>Chips de Batata</h2>
+                <span class="pack-size"><i class="fas fa-box"></i> Embalagens: 200g • 500g • 1kg</span>
+            </div>
+            <div class="product-grid">
+                <div class="prod-card">
+                    <img src="../images/produtos/batata-salgada.png" alt="Batata Salgada" class="prod-img">
+                    <h3>Salgada</h3>
+                    <p>Clássica, com sal rosa do Himalaia para mais equilíbrio e saúde.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/batata-lemon.png" alt="Batata Lemon" class="prod-img">
+                    <h3>Lemon Pepper</h3>
+                    <p>Batata crocante temperada com limão e pimenta, sabor marcante.</p>
                 </div>
             </div>
+        </section>
 
-            <!--produto tradicional com sal-->
-             <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-tradicional-com-sal.png" alt="imagem de chips de banana tradicional com sal">
-                <div class="prod-info">
-                    <span class="prod-tag">Salgada</span>
-                    <h4 class="prod-title">Tradicional com Sal</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666; margin-bottom: 5px;">A Tradicional com um nosso Sal especal do Himalaia</p>
-                    <div class="prod-sizes">100g • 200g • 500g • 3kg</div>
+        <section id="mexicana" class="product-category">
+            <div class="cat-header">
+                <h2>Batata Mexicana</h2>
+                <span class="pack-size"><i class="fas fa-box"></i> Embalagens: 60g • 200g • 500g • 2kg</span>
+            </div>
+            <div class="product-grid">
+                <div class="prod-card">
+                    <img src="../images/produtos/mex-salgada.png" alt="Salgada" class="prod-img">
+                    <h3>Salgada</h3>
+                    <p>Clássica, com sal rosa do Himalaia.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/mex-bacon.png" alt="Bacon" class="prod-img">
+                    <h3>Bacon</h3>
+                    <p>Defumada e irresistível, para os apaixonados por sabor intenso.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/mex-churrasco.png" alt="Churrasco" class="prod-img">
+                    <h3>Churrasco</h3>
+                    <p>Inspirada no sabor marcante do churrasco brasileiro.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/mex-salsa.png" alt="Salsa e Cebola" class="prod-img">
+                    <h3>Salsa & Cebola</h3>
+                    <p>Feita com salsa e cebola em pó, perfeita para combinações.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/mex-picante.png" alt="Picante" class="prod-img">
+                    <h3>Picante</h3>
+                    <p>Crocante e apimentada na medida certa.</p>
                 </div>
             </div>
+        </section>
 
+        <section id="raizes" class="product-category">
+            <div class="cat-header">
+                <h2>Mandioca e Mandioquinha</h2>
+                <span class="pack-size"><i class="fas fa-box"></i> Embalagens: 200g • 500g • 1kg</span>
+            </div>
+            <div class="product-grid">
+                <div class="prod-card">
+                    <img src="../images/produtos/mandioca-salgada.png" alt="Salgada" class="prod-img">
+                    <h3>Salgada</h3>
+                    <p>Feita com mandioca fresca e temperada com sal rosa do Himalaia.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/mandioca-lemon.png" alt="Lemon Pepper" class="prod-img">
+                    <h3>Lemon Pepper</h3>
+                    <p>Combinando o frescor do limão e a intensidade da pimenta.</p>
+                </div>
+                <div class="prod-card">
+                    <span class="badge novidade">Novidade</span>
+                    <img src="../images/produtos/mandioca-nacho.png" alt="Queijo Nacho" class="prod-img">
+                    <h3>Queijo Nacho</h3>
+                    <p>Uma versão especial, cheia de sabor e personalidade.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/mandioca-salsa.png" alt="Salsa e Cebola" class="prod-img">
+                    <h3>Salsa & Cebola</h3>
+                    <p>Com salsa e cebola em pó, crocante e saborosa.</p>
+                </div>
+                <div class="prod-card">
+                    <span class="badge campeao">Premium</span>
+                    <img src="../images/produtos/mandioquinha.png" alt="Mandioquinha" class="prod-img">
+                    <h3>Mandioquinha Salgada</h3>
+                    <p>A tradicional mandioquinha crocante, temperada com sal rosa do Himalaia.</p>
+                </div>
+            </div>
+        </section>
 
-        </div>
+        <section id="doces" class="product-category">
+            <div class="cat-header">
+                <h2>Doce de Banana</h2>
+                <span class="pack-size"><i class="fas fa-box"></i> Granel e Varejo</span>
+            </div>
+            <div class="product-grid">
+                <div class="prod-card">
+                    <img src="../images/produtos/barrinha-zero.png" alt="Barrinha" class="prod-img">
+                    <h3>Barrinha de Banana Zero</h3>
+                    <p>Doce saudável, feito apenas com banana, sem adição de açúcar.</p>
+                </div>
+                <div class="prod-card">
+                    <img src="../images/produtos/bala-zero.png" alt="Bala" class="prod-img">
+                    <h3>Bala de Banana Zero</h3>
+                    <p>A versão divertida e prática, com zero adição de açúcar.</p>
+                </div>
+            </div>
+        </section>
 
-        <!--categoria 2 batata mexicana-->
-        <div class="category-separator">
-            <span class="cat-title">Batata Mexicana</span>
-            <div class="cat-line"></div>
-        </div>
+        <section id="pipoca" class="product-category">
+            <div class="cat-header">
+                <h2>Pipoca Artesanal</h2>
+                <span class="pack-size"><i class="fas fa-box"></i> Embalagens: 100g • 500g • 1kg</span>
+            </div>
+            <div class="product-grid">
+                <div class="prod-card">
+                    <img src="../images/produtos/pipoca.png" alt="Pipoca" class="prod-img">
+                    <h3>Queijo Parmesão</h3>
+                    <p>Um petisco rápido, crocante e cheio de personalidade. Explode com o sabor marcante do parmesão.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="product-grid">
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-batata-mexicana-picante.png" alt="imagem de chips de batata mexicana picante">
-                <div class="prod-info">
-                    <h4 class="prod-title">Mexicana Picante</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666;">Pimenta com leveza natural.</p>
-                    <div class="prod-sizes">60g • 200g • 500g</div>
-                </div>
+        <section id="amendoim" class="product-category">
+            <div class="cat-header">
+                <h2>Amendoins</h2>
+                <span class="pack-size"><i class="fas fa-box"></i> Embalagens: 1kg • 10kg</span>
             </div>
-            
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-batata-mexicana-churrasco.png">
-                <div class="prod-info">
-                    <h4 class="prod-title">Sabor Churrasco</h4>
-                    <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.8rem; color: #666;">O preferido sabor brasileiro.</p>
-                    <div class="prod-sizes">60g • 200g • 500g</div>
-                </div>
+            <div class="product-grid">
+                <div class="prod-card"><h3>Ovinho</h3><p>Clássico amendoim crocante, coberto por uma fina camada salgada.</p></div>
+                <div class="prod-card"><h3>Ovinho Alho</h3><p>Versão temperada com alho, sabor marcante e delicioso.</p></div>
+                <div class="prod-card"><h3>Crocante Tradicional</h3><p>O clássico crocante que agrada a todos.</p></div>
+                <div class="prod-card"><h3>Crocante Salsa & Cebola</h3><p>O mix perfeito de frescor e sabor.</p></div>
+                <div class="prod-card"><h3>Crocante Picante</h3><p>Com tempero apimentado, para quem gosta de intensidade.</p></div>
+                <div class="prod-card"><h3>Japonês</h3><p>Amendoim crocante no estilo oriental, irresistível.</p></div>
+                <div class="prod-card destaque-doce"><h3>Praliné</h3><p>Crocante por fora, macio por dentro e envolto em camada doce.</p></div>
+                <div class="prod-card"><h3>Frito com Pele Salgado</h3><p>Amendoim frito crocante, com pele e sal na medida certa.</p></div>
+                <div class="prod-card"><h3>Frito sem Pele Salgado</h3><p>Crocante e leve, para quem prefere sem pele.</p></div>
+                <div class="prod-card"><h3>Frito sem Pele com Alho</h3><p>Combinação única de crocância com sabor especial de alho.</p></div>
+                <div class="prod-card"><h3>Cru com Pele</h3><p>Natural e versátil, ideal para receitas e consumo puro.</p></div>
+                <div class="prod-card"><h3>Cru sem Pele</h3><p>Leve, saudável e sem sal.</p></div>
+                <div class="prod-card"><h3>Torrado sem Pele e sem Sal</h3><p>Puro, leve e crocante. Só o sabor natural do amendoim.</p></div>
+                <div class="prod-card"><h3>Torrado sem Pele e com Sal</h3><p>Crocância na medida certa e aquele toque salgadinho.</p></div>
             </div>
-        </div>
+        </section>
 
-        <!--categoria 3 raizes batata doce-->
-        <div class="category-separator">
-            <span class="cat-title">Batata Doce</span>
-            <div class="cat-line"></div>
-        </div>
-
-        <div class="product-grid">
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-batata-doce-laranja.png">
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--verde-3);">Nutritiva</span>
-                    <h4 class="prod-title">Batata Doce Laranja</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Rica em fibras, cálcio e potássio.</p>
-                    <div class="prod-sizes">100g a 1kg</div>
+        <section id="xerem" class="product-category">
+            <div class="cat-header">
+                <h2>Xerém e Farinha</h2>
+                <span class="pack-size"><i class="fas fa-box"></i> Embalagens: 1kg • 10kg</span>
+            </div>
+            <div class="product-grid">
+                <div class="prod-card">
+                    <h3>Xerém de Amendoim</h3>
+                    <p>Pedacinhos crocantes e dourados, perfeito para finalizar receitas.</p>
+                </div>
+                <div class="prod-card">
+                    <h3>Farinha de Amendoim</h3>
+                    <p>Textura macia, aroma tostado e sabor levemente adocicado.</p>
                 </div>
             </div>
-
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-batata-doce-rosada.png">
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--verde-3);">Vitaminas</span>
-                    <h4 class="prod-title">Batata Doce Rosada</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Combate o alto teor de açucar e gera energia de verdade!</p>
-                    <div class="prod-sizes">100g a 1kg</div>
-                </div>
-            </div>
-
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-batata-doce-roxa.png">
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--verde-3);">Vitaminas</span>
-                    <h4 class="prod-title">Batata Doce Roxa</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Rica em vitaminas do complexo A, B, C e E.</p>
-                    <div class="prod-sizes">100g a 1kg</div>
-                </div>
-            </div>
-
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-batata-rosada-e-mel.png">
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--verde-3);">Inigualável</span>
-                    <h4 class="prod-title">Rosada Mostarda e Mel</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Todas as propriedades da batata doce com o sabor inigualável de Mostarda e Mel.</p>
-                    <div class="prod-sizes">100g a 1kg</div>
-                </div>
-            </div>
-            
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-mix-3-cores.png">
-                <div class="prod-info">
-                    <h4 class="prod-title">Mix 3 Cores</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Rosada, Roxa e Laranja.</p>
-                    <div class="prod-sizes">100g a 1kg</div>
-                </div>
-            </div>
-
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-batata-doce-salsa-e-cebola.png">
-                <div class="prod-info">
-                    <h4 class="prod-title">Batata Doce Salsa e Cebola</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Chips com o Tempero inigualavel de salsa e cebola</p>
-                    <div class="prod-sizes">100g a 1kg</div>
-                </div>
-            </div>
-
-            <div class="prod-card">
-                <img src="../images//produtos/chips-mandioquinha.png" alt="Chips de mandicquinha" class="img-card-catalogo">
-                <div class="prod-info">
-                    <h4 class="prod-title">Mandioquinha Chips</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Fresca, com sal do Himalaia.</p>
-                    <div class="prod-sizes">100g a 1kg</div>
-                </div>
-            </div>
-        </div>
-
-        <!--categoria 4 doces fit-->
-        <div class="category-separator">
-            <span class="cat-title">Doces Fit (Zero)</span>
-            <div class="cat-line"></div>
-        </div>
-        
-        <div class="product-grid">
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/barrinha-banana-zero.png" alt="imagem de barrinha de banana">
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--verde-4);">Zero Açúcar</span>
-                    <h4 class="prod-title">Barrinha de Banana</h4>
-                    <p style="font-size: 0.8rem; color: #666;">100% fruta, 100% saudável.</p>
-                    <div class="prod-sizes">500g • 1kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/bala-banana-zero.png" alt="imagem de bala de banana">
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--verde-4);">Zero Açúcar</span>
-                    <h4 class="prod-title">Bala de Banana</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Doce sem ser calórico.</p>
-                    <div class="prod-sizes">500g • 1kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/banana-passas.png" alt="imagem de banana passas">
-                <div class="prod-info">
-                    <span class="prod-tag" style="background: var(--verde-4);">Zero Açúcar</span>
-                    <h4 class="prod-title">Banana Passas</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Doce sem ser calórico.</p>
-                    <div class="prod-sizes">500g • 1kg</div>
-                </div>
-            </div>
-        </div>
-
-        <!--categoria 5 amendoins-->
-        <div class="category-separator">
-            <span class="cat-title">Amendoins</span>
-            <div class="cat-line"></div>
-        </div>
-
-        <div class="product-grid">
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/amendoin-bolinha.png" alt="imagem de amendoim bolinha">
-                <div class="prod-info">
-                    <h4 class="prod-title">Bolinha Tradicional</h4>
-                    <div class="prod-sizes">500g • 1kg • 5kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/amendoin-bolinha-alho.png" alt="imagem de amendoim bolinha com alho">
-                <div class="prod-info">
-                    <h4 class="prod-title">Bolinha Alho</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Amendoim bolinha em uma versão exótica, com alho.</p>
-                    <div class="prod-sizes">500g • 1kg • 5kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/amendoin-sem-pele-salgado.png" alt="imagem de amendoim sem pele salgado">
-                <div class="prod-info">
-                    <h4 class="prod-title">Frito sem Pele Salgado</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Amendoim classico sem pele frito com um toque de sal</p>
-                    <div class="prod-sizes">500g • 1kg • 5kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/amendoin-sem-pele-alho.png" alt="imagem de amendoim sem pele salgado">
-                <div class="prod-info">
-                    <h4 class="prod-title">Frito sem Pele Alho</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Amendoim frito com laminas de alho, irresistível.</p>
-                    <div class="prod-sizes">500g • 1kg • 5kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/amendoin-cru-com-pele.png" alt="imagem de amendoim sem pele salgado">
-                <div class="prod-info">
-                    <h4 class="prod-title">Cru com Pele</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Amendoim cru com pele sem sal.</p>
-                    <div class="prod-sizes">500g • 1kg • 5kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/amendoin-crocante-pimenta.png" alt="imagem de amendoim crocante com pimenta">
-                <div class="prod-info">
-                    <h4 class="prod-title">Crocante Pimenta</h4>
-                    <div class="prod-sizes">500g • 1kg • 5kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/amendoin-crocante-salsa.png" alt="imagem de amendoim crocante com salsa">
-                <div class="prod-info">
-                    <h4 class="prod-title">Amendoin crocante sabor Salsa</h4>
-                    <div class="prod-sizes">500g • 1kg • 5kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/amendoin-shoyu.png" alt="imagem de amendoim crocante sabor shoyu">
-                <div class="prod-info">
-                    <h4 class="prod-title">Amendoin crocante sabor Shoyu</h4>
-                    <div class="prod-sizes">500g • 1kg • 5kg</div>
-                </div>
-            </div>
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/amendoin-crocante-natural.png" alt="imagem de amendoim crocante sabor natural">
-                <div class="prod-info">
-                    <h4 class="prod-title">Amendoin crocante sabor Natural</h4>
-                    <div class="prod-sizes">500g • 1kg • 5kg</div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--categoria 6 batata e mandioca-->
-        <div class="category-separator">
-            <span class="cat-title">Batata e Mandioca</span>
-            <div class="cat-line"></div>
-        </div>
-
-        <div class="product-grid">
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-batata-lemon-pepper.png" alt="imagem de chips de batata lemon pepper">
-                <div class="prod-info">
-                    <h4 class="prod-title">Batata Lemon Pepper</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Batata chips feita e temperada com nosso especial tempero Lemon Pepper.</p>
-                    <div class="prod-sizes">100% • 200g • 500g • 1kg</div>
-                </div>
-            </div>
-
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-batata-salgada.png" alt="imagem de chips de batata salgada">
-                <div class="prod-info">
-                    <h4 class="prod-title">Batata Salgada</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Batatinha chips salgada com sal rosa do Himalaia, garantindo saúde, equilíbrio e o bom desempenho do seu organismo!</p>
-                    <div class="prod-sizes">100% • 200g • 500g • 1kg</div>
-                </div>
-            </div>
-
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-mandioca-salgada.png" alt="imagem de chips de mandioca salgada">
-                <div class="prod-info">
-                    <h4 class="prod-title">Mandioca Salgada</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Chips de mandioca feita com nosso sal especial do Himalaia, garantia de equilíbrio e saúde para uma longa vida!</p>
-                    <div class="prod-sizes">100% • 200g • 500g • 1kg</div>
-                </div>
-            </div>
-
-
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-mandioca-lemon-pepper.png" alt="imagem de chips de mandioca lemon pepper">
-                <div class="prod-info">
-                    <h4 class="prod-title">Mandioca Lemon Pepper</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Chips de mandioca feita com o tempero Lemon Pepper, vale experimentar e não se arrepender!</p>
-                    <div class="prod-sizes">100% • 200g • 500g • 1kg</div>
-                </div>
-            </div>
-
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-mandioca-salsa-e-cebola.png
-                " alt="imagem de chips de mandioca salsa e cebola">
-                <div class="prod-info">
-                    <h4 class="prod-title">Mandioca Salsa e Cebola</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Chips de mandioca temperada com salsa e cebola de primeira qualidade!</p>
-                    <div class="prod-sizes">100% • 200g • 500g • 1kg</div>
-                </div>
-            </div>
-
-            <div class="prod-card">
-                <img class="img-card-catalogo" src="../images/produtos/chips-mandioquinha.png"" alt="imagem de chips de mandioquinha">
-                <div class="prod-info">
-                    <h4 class="prod-title">Mandioquinha Chips</h4>
-                    <p style="font-size: 0.8rem; color: #666;">Chips de mandioquinha fresca, feita como sal do Himalaia.</p>
-                    <div class="prod-sizes">100% • 200g • 500g • 1kg</div>
-                </div>
-            </div>
-            
-        </div>
+        </section>
 
     </div>
 
-    <div class="simple-footer">
-        Ouro Verde © - Qualidade Natural
+    <div class="catalog-footer">
+        <h3>Quer levar esses produtos para sua loja?</h3>
+        <a href="https://wa.me/5511955507965" class="btn-cta btn-primary">Solicitar Tabela de Preços</a>
     </div>
 
 </body>

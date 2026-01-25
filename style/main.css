@@ -1,4 +1,4 @@
-/* --- Okta Neue Thin (100) --- */
+/*okta neue thin 100*/
 @font-face {
     font-family: 'Okta Neue';
     src: url('fonts/OktaNeue-Thin.woff2') format('woff2');
@@ -7,7 +7,7 @@
     font-display: swap;
 }
 
-/* --- Okta Neue ExtraLight (200) --- */
+/*okta neue extralight 200*/
 @font-face {
     font-family: 'Okta Neue';
     src: url('fonts/OktaNeue-ExtraLight.woff2') format('woff2');
@@ -16,7 +16,7 @@
     font-display: swap;
 }
 
-/* --- Okta Neue Light (300) --- */
+/*okta neue light 300*/
 @font-face {
     font-family: 'Okta Neue';
     src: url('fonts/OktaNeue-Light.woff2') format('woff2');
@@ -25,16 +25,16 @@
     font-display: swap;
 }
 
-/* --- Okta Neue Regular (400) --- */
+/*okta neue regular 400*/
 @font-face {
     font-family: 'Okta Neue';
     src: url('fonts/OktaNeue-Regular.woff2') format('woff2');
-    font-weight: 400; /* Normal */
+    font-weight: 400; /*normal*/
     font-style: normal;
     font-display: swap;
 }
 
-/* --- Okta Neue Medium (500) --- */
+/*okta neue medium 500*/
 @font-face {
     font-family: 'Okta Neue';
     src: url('fonts/OktaNeue-Medium.woff2') format('woff2');
@@ -43,7 +43,7 @@
     font-display: swap;
 }
 
-/* --- Okta Neue SemiBold (600) --- */
+/*okta neue semibold 600*/
 @font-face {
     font-family: 'Okta Neue';
     src: url('fonts/OktaNeue-SemiBold.woff2') format('woff2');
@@ -52,16 +52,16 @@
     font-display: swap;
 }
 
-/* --- Okta Neue Bold (700) --- */
+/*okta neue bold 700*/
 @font-face {
     font-family: 'Okta Neue';
     src: url('fonts/OktaNeue-Bold.woff2') format('woff2');
-    font-weight: 700; /* Bold */
+    font-weight: 700; /*bold*/
     font-style: normal;
     font-display: swap;
 }
 
-/* --- Okta Neue Heavy (800) --- */
+/*okta neue heavy 800*/
 @font-face {
     font-family: 'Okta Neue';
     src: url('fonts/OktaNeue-Heavy.woff2') format('woff2');
@@ -70,7 +70,7 @@
     font-display: swap;
 }
 
-/* --- Okta Neue Black (900) --- */
+/*okta neue black 900*/
 @font-face {
     font-family: 'Okta Neue';
     src: url('fonts/OktaNeue-Black.woff2') format('woff2');
@@ -83,31 +83,31 @@
 
 /*variaveis de cor*/
 :root {
-    --cor-destaque: #FFC301; /* 10% - botoes e ctas */
-    --cor-secundaria: #169152; /* 30% - identidade verde ouro verde */
-    --cor-terciaria: #8FB001;
+    --cor-destaque: #FFC301; /*10 botoes e ctas*/
+    --cor-secundaria: #169152; /*30 identidade verde ouro verde*/
+    --cor-terciaria: #b7e001;
     --cor-texto: #333333;
-    --cor-fundo: #FAFAFA; /* 60% - Base Limpa */
-    --cor-fundo-suave: rgb(254, 249, 231); /* creme suave para secoes */
+    --cor-fundo: #FAFAFA; /*60 base limpa*/
+    --cor-fundo-suave: rgb(254, 249, 231); /*creme suave para secoes*/
 }
 
 html {
-    /* Deixa a rolagem suave, fica mais elegante */
+    /*deixa a rolagem suave, fica mais elegante*/
     scroll-behavior: smooth; 
 }
 
 section {
-    /* Isso cria uma margem invisível no topo de cada seção ao rolar */
-    /* Ajuste o valor 100px para o tamanho exato do seu menu */
+    /*isso cria uma margem invisivel no topo de cada secao ao rolar*/
+    /*ajuste o valor 100px para o tamanho exato do seu menu*/
     scroll-margin-top: 100px; 
 }
         
-/* Caso queira garantir para todos os IDs especificamente */
+/*caso queira garantir para todos os ids especificamente*/
 #lojas, #catalogo, #quem-somos, #fale-conosco {
-    scroll-margin-top: 110px; /* Um pouco mais de espaço para respiro */
+    scroll-margin-top: 110px; /*um pouco mais de espaco para respiro*/
 }
 
-/* reset e base */
+/*reset e base*/
 
 * {
     margin: 0;
@@ -118,7 +118,8 @@ section {
 
 body {
     
-    color: var(--cor-texto); background: var(--cor-fundo);
+    color: var(--cor-texto); 
+    background: var(--cor-fundo);
     overflow-x: hidden;
 }
 
@@ -232,7 +233,7 @@ header {
 }
 
 /*beneficios estilo mobile first*/
-/*beneficios estilo mobile first (lado a lado)*/
+/*beneficios estilo mobile first lado a lado*/
 .benefits {
     padding: 10px 15px; /*padding lateral menor pra ganhar espaco*/
     text-align: center;
@@ -244,9 +245,9 @@ header {
 
 .benefits-grid {
     display: grid;
-    /* MUDANCA AQUI: 2 colunas no celular */
+    /*mudanca aqui 2 colunas no celular*/
     grid-template-columns: repeat(2, 1fr); 
-    gap: 15px; /* espaco menor entre eles */
+    gap: 15px; /*espaco menor entre eles*/
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -255,7 +256,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* opcional: fundo leve pra delimitar o item no celular */
+    /*opcional fundo leve pra delimitar o item no celular*/
     padding: 10px; 
 }
 
@@ -286,7 +287,7 @@ header {
     line-height: 1.3;
 }
 
-/*computador vira 4 colunas (mantido)*/
+/*computador vira 4 colunas mantido*/
 @media (min-width: 1024px) {
     .benefits {
         margin-top: 0px;
@@ -313,8 +314,11 @@ header {
 }
 /*secao quem somos*/
 .about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 20px 20px;
-    background: #fff; /* fundo branco para contraste com secoes cremes */
+    background: #fff; /*fundo branco para contraste com secoes cremes*/
     text-align: center;
 }
 
@@ -336,7 +340,7 @@ header {
     line-height: 1.8;
     color: var(--cor-texto);
     margin-bottom: 20px;
-    text-align: justify; /* texto justificado para visual de jornal/livro */
+    text-align: justify; /*texto justificado para visual de jornallivro*/
 }
 
 /*destaques no texto*/
@@ -364,7 +368,7 @@ header {
 .stat-num {
     font-family: 'Okta Neue';
     font-size: 2.5rem;
-    color: var(--cor-destaque); /* amarelo */
+    color: var(--cor-destaque); /*amarelo*/
     font-weight: 700;
     line-height: 1;
     text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
@@ -373,7 +377,7 @@ header {
 .stat-desc {
     font-size: 12px;
     font-weight: 600;
-    color: var(--cor-secundaria); /* verde */
+    color: var(--cor-secundaria); /*verde*/
     text-transform: uppercase;
     margin-top: 5px;
     line-height: 1.2;
@@ -430,7 +434,7 @@ header {
 }
 
 
-/*---mapa---*/
+/*mapa*/
 .store-locator {
     padding: 40px 20px;
     background: white;
@@ -438,7 +442,7 @@ header {
 .map-wrapper {
     position: relative;
     height: 100dvh; /*altura dinamica*/
-    max-height: 500px; /*limite para nao ficar gigante em tablet/pc*/
+    max-height: 500px; /*limite para nao ficar gigante em tabletpc*/
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
@@ -493,7 +497,7 @@ header {
     display: none;
 }
 
-/*---autocomplete css---*/
+/*autocomplete css*/
 .sugestoes-dropdown {
     position: absolute;
     top: 100%;
@@ -536,13 +540,11 @@ header {
     color: var(--cor-secundaria);
 }
 
-/* =========================================
-   SEÇÃO FALE CONOSCO (B2B STYLE)
-   ========================================= */
+/*secao fale conosco b2b style*/
 
 .contact-section {
-    padding: 80px 20px;
-    background-color: var(--cor-fundo); /* Usa a variável global cinza claro */
+    padding: 40px 20px;
+    background-color: var(--cor-fundo);
     position: relative;
 }
 
@@ -554,30 +556,30 @@ header {
     font-weight: 700;
 }
 
-/* O Container Principal (A "Caixa" que segura tudo) */
+/*o container principal a caixa que segura tudo*/
 .contact-wrapper {
     background: white;
     border-radius: 30px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.08); /* Sombra elegante */
-    overflow: hidden; /* Arredonda os filhos */
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08); /*sombra elegante*/
+    overflow: hidden; /*arredonda os filhos*/
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* Mobile: Um em cima do outro */
+    flex-direction: column; /*mobile um em cima do outro*/
 }
 
-/* --- COLUNA ESQUERDA (VERDE) --- */
-/* --- coluna esquerda (verde) renovada --- */
+/*coluna esquerda verde*/
+/*coluna esquerda verde renovada*/
 .contact-info {
-    background-color: #00210E; /* verde da marca */
+    background-color: #00210E; /*verde da marca*/
     color: var(--cor-texto);
     padding: 30px 20px;
     position: relative;
     display: flex;
-    align-items: center; /* centraliza verticalmente */
+    align-items: center; /*centraliza verticalmente*/
 }
 
-/* padrao de fundo sutil (opcional, da um charme) */
+/*padrao de fundo sutil opcional, da um charme*/
 .contact-info::before {
     content: '';
     position: absolute;
@@ -597,7 +599,7 @@ header {
 .contact-info h3 {
     font-family: 'Okta Neue', sans-serif;
     font-size: 1.6rem;
-    font-weight: 800; /* bem grosso */
+    font-weight: 800; /*bem grosso*/
     color: var(--cor-destaque);
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -613,7 +615,7 @@ header {
     color:rgb(254, 249, 231)
 }
 
-/* lista de contatos */
+/*lista de contatos*/
 .info-list {
     display: flex;
     flex-direction: column;
@@ -629,16 +631,16 @@ header {
     transition: transform 0.3s ease;
 }
 
-/* efeito ao passar o mouse no item */
+/*efeito ao passar o mouse no item*/
 .info-item:hover {
     transform: translateX(10px);
 }
 
-/* bolinha do icone */
+/*bolinha do icone*/
 .icon-circle {
     width: 30px;
     height: 30px;
-    background: rgba(255, 255, 255, 0.15); /* branco transparente */
+    background: rgba(255, 255, 255, 0.15); /*branco transparente*/
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -648,7 +650,7 @@ header {
 }
 
 
-/* destaque para o whatsapp ao passar mouse */
+/*destaque para o whatsapp ao passar mouse*/
 .info-item:hover .icon-circle {
     background: white;
     color: var(--verde);
@@ -657,7 +659,7 @@ header {
     color: var(--verde);
 }
 
-/* textos do item */
+/*textos do item*/
 .info-text {
     display: flex;
     flex-direction: column;
@@ -676,7 +678,7 @@ header {
     font-weight: 600;
 }
 
-/* area social no final */
+/*area social no final*/
 .contact-social {
     margin-top: 50px;
     padding-top: 30px;
@@ -714,7 +716,7 @@ header {
     color: black;
 }
 
-/* Lista de Ícones e Textos */
+/*lista de icones e textos*/
 .info-list {
     display: flex;
     flex-direction: column;
@@ -744,10 +746,10 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 1.1rem;
-    color: var(--cor-destaque); /* Ícone amarelo */
+    color: var(--cor-destaque); /*icone amarelo*/
 }
 
-/* Redes Sociais Internas */
+/*redes sociais internas*/
 .contact-social {
     margin-top: 50px;
     display: flex;
@@ -772,7 +774,7 @@ header {
     transform: translateY(-3px);
 }
 
-/* --- COLUNA DIREITA (FORMULÁRIO) --- */
+/*coluna direita formulario*/
 .contact-form {
     padding: 50px 40px;
     background: white;
@@ -785,10 +787,10 @@ header {
     color: var(--cor-secundaria);
     font-size: 1.5rem;
     margin-bottom: 10px;
-    display: none; /* Esconde título duplicado no mobile */
+    display: none; /*esconde titulo duplicado no mobile*/
 }
 
-/* Inputs e Labels */
+/*inputs e labels*/
 .input-group {
     display: flex;
     flex-direction: column;
@@ -823,14 +825,14 @@ header {
     box-shadow: 0 0 0 4px rgba(22, 145, 82, 0.1);
 }
 
-/* Grid para Inputs Lado a Lado */
+/*grid para inputs lado a lado*/
 .form-row {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* Botão Enviar */
+/*botao enviar*/
 .btn-submit {
     margin-top: 10px;
     background: var(--cor-destaque);
@@ -853,20 +855,20 @@ header {
     box-shadow: 0 8px 25px rgba(255, 195, 1, 0.5);
 }
 
-/* --- MEDIA QUERIES (TABLET & DESKTOP) --- */
+/*media queries tablet desktop*/
 @media (min-width: 900px) {
     .contact-wrapper {
-        flex-direction: row; /* Coloca lado a lado no PC */
-        min-height: 600px; /* Altura mínima para ficar bonito */
+        flex-direction: row; /*coloca lado a lado no pc*/
+        min-height: 600px; /*altura minima para ficar bonito*/
     }
 
     .contact-info {
-        flex: 1; /* Ocupa 40% */
+        flex: 1; /*ocupa 40*/
         padding: 60px;
     }
 
     .contact-form {
-        flex: 1.4; /* Ocupa 60% */
+        flex: 1.4; /*ocupa 60*/
         padding: 60px;
         justify-content: center;
     }
@@ -874,19 +876,19 @@ header {
     .form-title { display: block; }
 
     .form-row {
-        flex-direction: row; /* Inputs na mesma linha */
+        flex-direction: row; /*inputs na mesma linha*/
     }
     
-    /* Faz os inputs dentro da row dividirem o espaço */
+    /*faz os inputs dentro da row dividirem o espaco*/
     .form-row .input-group {
         flex: 1; 
     }
 }
 
-/* --- SEÇÃO PROVA SOCIAL --- */
+/*secao prova social*/
 .social-proof {
     padding: 60px 20px;
-    background: #f9f9f9; /* Fundo levemente diferente pra separar */
+    background: #f9f9f9; /*fundo levemente diferente pra separar*/
     text-align: center;
 }
 
@@ -895,17 +897,17 @@ header {
     margin-bottom: 40px;
 }
 
-/* Grid das Avaliações */
+/*grid das avaliacoes*/
 .reviews-grid {
     display: grid;
-    /* Começa com 1 coluna no mobile */
+    /*comeca com 1 coluna no mobile*/
     grid-template-columns: 1fr;
     gap: 20px;
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* Cartão da Avaliação (Onde fica o print) */
+/*cartao da avaliacao onde fica o print*/
 .review-card {
     background: white;
     padding: 10px;
@@ -919,18 +921,18 @@ header {
 }
 
 .review-card:hover {
-    transform: translateY(-5px); /* Efeito de subir ao passar mouse */
+    transform: translateY(-5px); /*efeito de subir ao passar mouse*/
 }
 
-/* Ajuste da Imagem do Print */
+/*ajuste da imagem do print*/
 .review-card img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    object-fit: contain; /* Garante que o print não distorça */
+    object-fit: contain; /*garante que o print nao distorca*/
 }
 
-/* Rodapé da seção (Badge Google) */
+/*rodape da secao badge google*/
 .google-badge {
     margin-top: 40px;
     display: inline-block;
@@ -952,10 +954,10 @@ header {
     letter-spacing: 3px;
 }
 
-/* --- VERSÃO DESKTOP --- */
+/*versao desktop*/
 @media (min-width: 768px) {
     .reviews-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas lado a lado */
+        grid-template-columns: repeat(3, 1fr); /*3 colunas lado a lado*/
     }
 }
 
@@ -968,7 +970,7 @@ footer {
     font-size: 14px;
 }
 
-/* Estilo Base para todos os botões flutuantes */
+/*estilo base para todos os botoes flutuantes*/
 .float-btn {
     right: 20px;
     color: white;
@@ -993,34 +995,191 @@ footer {
     right: 20px;
 }
 
-/* Botão do WhatsApp */
+/*botao do whatsapp*/
 .whatsapp-float {
     background-color: #25d366;
     box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
 }
 
-/* Botão do Instagram */
+/*botao do instagram*/
 .instagram-float {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     box-shadow: 0 4px 15px rgba(214, 36, 159, 0.4);
 }
 
-/* Botão do Facebook */
+/*botao do facebook*/
 .facebook-float {
     background-color: #1877F2;
     box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
 }
 
-/* Animação de Pulsação */
+/*animacao de pulsacao*/
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
 
+/*alteracoes para telas grandes*/
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
+/*telas 1024*/
+@media (min-width: 1024px) {
+    
+    header {
+        padding: 15px 40px;
+    }
+
+    .logo img {
+        width: auto;  
+        height: 60px;   
+    }
+
+    .btn-header {
+        padding: 10px 25px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .hero {
+        padding: 80px 20px;
+        border-radius: 0 0 50px 50px; 
+        min-height: 500px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo-hero img {
+        height: 35vh; 
+        max-height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .div-btn-cta {
+        margin-top: 20px;
+    }
+
+    .benefits {
+        margin-left: 60px;
+        margin-right: 60px;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 30px;
+    }
+
+    .icon-box {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    
+    .about-content {
+        max-width: 900px; 
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    
+    .contact-section {
+        padding: 80px 40px;
+        background-color: var(--cor-fundo);
+    }
+
+    .contact-wrapper {
+        flex-direction: row;
+        max-width: 1200px; 
+        margin: 0 auto;
+        min-height: 550px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    }
+
+    
+    .contact-info {
+        flex: 1;
+        padding: 60px;
+        justify-content: center;
+    }
+
+    .contact-info h3 {
+        font-size: 2rem;
+    }
+
+   
+    .contact-form {
+        flex: 1.5; 
+        padding: 60px;
+        justify-content: center;
+    }
+
+    .form-title {
+        display: block;
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    
+    .form-row {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .form-row .input-group {
+        flex: 1; 
+    }
+
+    
+    .botoes-contato {
+        right: 30px;
+        top: auto;
+        bottom: 30px;
+        flex-direction: row; 
+    }
+
+    .products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*telas grandes 1920*/
+@media (min-width: 1400px) {
+    .catalog-container, 
+    .contact-wrapper,
+    .reviews-grid,
+    .benefits-grid {
+        max-width: 1400px; /* Aproveita mais a tela */
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
