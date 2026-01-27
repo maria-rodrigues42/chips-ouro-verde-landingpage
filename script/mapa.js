@@ -1,4 +1,4 @@
-/*global l, lojas*/
+/*global L, lojas*/
 
 //1 configuracao do mapa
 var map = L.map('map', { zoomControl: false }).setView([-23.49, -46.55], 11);
@@ -51,20 +51,22 @@ async function buscarLoja() {
     var card = document.getElementById('result-card');
     document.getElementById('lista-sugestoes').style.display = 'none';
 
-    //aviso visual pedir endereco
+    //aviso visual: pedir endereco
     if(!input) {
         card.style.display = 'block';
-        //mensagem pede endereco
+        //mensagem: pede endereco
         card.innerHTML = '<span style="color:#FFC301; font-weight:600;"><i class="fas fa-exclamation-circle"></i> Por favor, digite um endereço.</span>';
         
-        //efeito toast some depois de 3s
+        //efeito toast: some depois de 3s
         setTimeout(() => {
             card.style.display = 'none';
         }, 3000);
         
         return; //para a funcao aqui
     }
-    //card.style.display block
+    //------------------------------------------------
+
+    card.style.display = 'block';
     card.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Buscando...';
 
     try {

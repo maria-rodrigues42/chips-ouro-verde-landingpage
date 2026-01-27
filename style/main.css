@@ -123,8 +123,8 @@ body {
     overflow-x: hidden;
 }
 
-img { max-width: 100%;
-    display: block;
+img { 
+    max-width: 100%;
 }
 
 a {
@@ -988,11 +988,9 @@ footer {
 
 .botoes-contato {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
-    position: fixed;
-    top: 13dvh;
-    right: 20px;
+    
 }
 
 /*botao do whatsapp*/
@@ -1159,27 +1157,47 @@ footer {
     }
 }
 
-/*telas grandes 1920*/
 @media (min-width: 1400px) {
     .catalog-container, 
     .contact-wrapper,
     .reviews-grid,
     .benefits-grid {
-        max-width: 1400px; /* Aproveita mais a tela */
+        max-width: 1400px;
     }
 
-    .hero h1 {
-        font-size: 3.5rem;
-    }
-    
-    .hero p {
-        font-size: 1.3rem;
-    }
+    .hero h1 { font-size: 3.5rem; }
+    .hero p { font-size: 1.3rem; }
 
-    .products{
+    .products {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
+
+
+#map img,
+.leaflet-pane img,
+.leaflet-tile-container img,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile {
+    max-width: none !important;
+    max-height: none !important;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    
+    display: inline-block !important; 
+    
+    box-shadow: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+.leaflet-container {
+    overflow: hidden;
+    -ms-touch-action: none;
+    touch-action: none;
 }
