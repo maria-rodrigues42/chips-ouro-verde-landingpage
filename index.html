@@ -22,22 +22,19 @@
         <div class="logo">
             <img src="./images/nome-marca-preto.png" alt="Ouro Verde">
         </div>
+
+        <a href="#catalogo">Nossos Sabores</a>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#lojas">Onde Encontrar</a>
+        <a href="#fale-conosco">Fale Conosco</a>
+
         <div class="botoes-contato">
-            <!--link do facebook-->
-        <a href="https://www.facebook.com/people/Chips-Ouro-Verde/61581605133432/" class="float-btn facebook-float" target="_blank">
-            <i class="fab fa-facebook"></i>
-        </a>
+            <a href="https://www.instagram.com/chipsouroverde/"><i class="fab fa-instagram"></i></a>
 
-        <!--link do instagram-->
-        <a href="https://www.instagram.com/chipsouroverde/" class="float-btn instagram-float" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
+            <a href="https://www.facebook.com/people/Chips-Ouro-Verde/61581605133432/"><i class="fab fa-facebook"></i></a>
 
-        <!--link do whatsapp-->
-        <a href="https://wa.me/5511955507965?text=Olá, Ouro Verde!" class="float-btn whatsapp-float" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
+            <a href="https://wa.me/5511955507965?text=Olá, Ouro Verde!" class="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
     </header>
 
     <section class="hero">
@@ -51,8 +48,9 @@
         </div>
 
         <div class="div-btn-cta">
-            <a href="#lojas" class="btn-cta">Onde Encontrar</a>
-            <a href="#catalogo" class="btn-cta" style="color: rgb(41, 58, 0); background-color: rgb(162, 231, 0); box-shadow: 0 4px 15px rgba(145, 207, 0, 0.4);">Quero Ver o Catálogo</a>
+            <a href="https://wa.me/5511955507965" class="btn-cta bt-1compra">Comprar Agora</a>
+            <a href="#lojas" class="btn-cta bt-2encontrar" style="color: rgb(16, 23, 0); background-color: #96B500; box-shadow: 0 4px 15px rgba(145, 207, 0, 0.4);">Onde Encontrar</a>
+            <a href="#catalogo" class="btn-cta bt-3catalogo" >Quero Ver o Catálogo</a>
         </div>
     </section>
 
@@ -94,19 +92,28 @@
         border: solid var(--cor-destaque) 5px;
         margin-bottom: 30px;
         ">
-        <p>Do campo para sua gôndola, oferecemos um mix completo. Nossos carros-chefe são os <span>Chips de Banana e Raízes</span> (Mandioca, Batata Doce e Inglesa) preparados com Sal do Himalaia e Óleo de Palma. Inovamos com a linha <span>Batata Mexicana</span> e sabores como Lemon Pepper e Queijo Nacho. Completam o portfólio nossos <span>Doces de Banana Zero</span>, <span>Pipocas Artesanais</span> e <span></span>Amendoins selecionados</span>. Variedade, crocância e ingredientes 100% naturais.</p>
+        
+        <div class="about-content" style="text-align: justify;">
+            <p>Do campo para sua gôndola, oferecemos um mix completo. Nossos carros-chefe são os <span>Chips de Banana e Raízes</span> (Mandioca, Batata Doce e Inglesa) preparados com Sal do Himalaia e Óleo de Palma. Inovamos com a linha <span>Batata Mexicana</span> e sabores como Lemon Pepper e Queijo Nacho. Completam o portfólio nossos <span>Doces de Banana Zero</span>, <span>Pipocas Artesanais</span> e <span></span>Amendoins selecionados</span>. Variedade, crocância e ingredientes 100% naturais.</p>
+        </div>
         
         <div class="catalog-box">
             <h3 style="font-weight: 900; padding-bottom: 15px">Conheça Nossa Linha Completa</h3>
-            
-            <a href="./pages/catalogo.html" class="btn-cta" style="margin-bottom: 15px; width: 100%; max-width: 280px; display: inline-block;">
-                Ver Catálogo Online
-            </a>
+            <div class="div-btn-catalogo">
+                <a href="./pages/catalogo.html" class="btn-cta-catalogo">
+                    Ver Catálogo Online
+                </a>
 
-            <a href="./docs/catalogo-ouro-verde.pdf" class="btn-cta" style="margin-bottom: 15px; max-width: 280px; display: inline-block; background-color: var(--cor-terciaria); box-shadow: 0 4px 15px rgba(100, 100, 100, 0.4); padding: 10px 20px">
-                <i class="fas fa-file-pdf"></i> Catálogo Completo
-            </a>
-            
+                <a href="./docs/catalogo-ouro-verde.pdf" class="btn-cta-catalogo" 
+                style="
+                background-color: var(--cor-terciaria); 
+                box-shadow: 0 4px 15px rgba(100, 100, 100, 0.4);
+                display: flex;
+                gap: 5px;
+                "">
+                    <i class="fas fa-file-pdf" style="text-align:center; font-size:2rem; padding-right:7px;"></i>Catálogo Completo
+                </a>
+            </div>
             
         </div>
     </section>
@@ -185,7 +192,7 @@
         </div>
     </section>
 
-    <section class="contact-section" id="fale-conosco">
+    <section class="-b-section" id="fale-conosco">
         <h2 class="section-title">Fale Conosco</h2>
         
         <div class="contact-wrapper">
@@ -270,12 +277,12 @@
     </section>
 
     <section class="social-proof">
-        <h2 class="section-title">O que dizem nossos parceiros e clientes</h2>
+        <h2 class="section-title" style="color: var(--cor-secundaria);">O que dizem nossos parceiros e clientes</h2>
         
         <div class="reviews-grid">
             
             <div class="review-card">
-                <img src="./images/avaliacoes/review1.png" alt="Avaliação Google - Leticia Tonisso">
+                <img src="./images/avaliacoes/review6.png" alt="Avaliação Google - Leticia Tonisso">
             </div>
 
             <div class="review-card">
@@ -294,6 +301,10 @@
                 <img src="./images/avaliacoes/review5.png" alt="Avaliação Google - Cliente 3">
             </div>
 
+            <div class="review-card">
+                <img src="./images/avaliacoes/review7.png" alt="Avaliação Google - Cliente 3">
+            </div>
+
 
         </div>
 
@@ -305,7 +316,7 @@
     </section>
 
     <footer>
-        <p>© 2026 Chips Ouro Verde. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Ellohub One Marketing</p>
         <p style="margin-top:10px;">
             <a href="https://chipsouroverdelinks.my.canva.site/" style="color:var(--cor-destaque); text-decoration:underline;">Saiba mais sobre nós</a>
         </p>
