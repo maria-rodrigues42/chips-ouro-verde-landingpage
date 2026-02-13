@@ -231,6 +231,7 @@ header {
     height: 100%;
     flex-direction: column;
     padding-bottom: 30px;
+    gap: 1rem;
 }
 
 .btn-cta {
@@ -244,6 +245,7 @@ header {
     transition: all 0.3s ease;
     line-height: 1.3;
     text-align: center;
+    width: 85dvw;
 }
 .btn-cta:active { transform: scale(0.95); }
 .btn-cta:hover { 
@@ -331,6 +333,9 @@ header {
     .benefit-item h3 { font-size: 1.1rem; }
     .benefit-item p { font-size: 0.9rem; }
 }
+
+
+
 /*secao quem somos*/
 .about-us {
     display: flex;
@@ -1118,6 +1123,7 @@ footer {
 
     .btn-cta{
         font-size: 1.5rem;
+        width: auto;
     }
 
     .bt-1compra{
@@ -1156,6 +1162,11 @@ footer {
         margin-bottom: 20px;
     }
 
+    /**nossos sabores*/
+    #catalogo img{
+        width: 50dvw;
+    }
+
     
     .about-content {
         max-width: 900px; 
@@ -1164,6 +1175,7 @@ footer {
     .about-text p {
         font-size: 1.1rem;
         line-height: 1.8;
+        
     }
 
     
