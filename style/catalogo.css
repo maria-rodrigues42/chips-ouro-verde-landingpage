@@ -159,6 +159,15 @@
     border-radius: 4px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-left: 5px;
+}
+
+.badge:nth-of-type(2) {
+    top: 35px;
+}
+
+.badge:nth-of-type(3) {
+    top: 60px;
 }
 
 .badge.campeao {
@@ -168,6 +177,11 @@
 
 .badge.novidade {
     background: var(--cor-secundaria);
+    color: white;
+}
+
+.badge.gluten-free {
+    background: #4CAF50;
     color: white;
 }
 
