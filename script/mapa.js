@@ -21,12 +21,22 @@ var greenIcon = L.divIcon({
 var rotaAtual = null;
 
 // 4. Carregar lojas do arquivo lojas.js
+function coordValida(lat, lon) {
+    return typeof lat === 'number' && typeof lon === 'number' &&
+           isFinite(lat) && isFinite(lon) &&
+           lat !== 0 && lon !== 0 &&
+           lat >= -90 && lat <= 90 && lon >= -180 && lon <= 180;
+}
+
 if (typeof lojas !== 'undefined') {
     lojas.forEach(loja => {
-        if (loja.latitude && loja.longitude) {
+        if (!coordValida(loja.latitude, loja.longitude)) return;
+        try {
+            const nome = loja.nome || 'Loja';
+            const end = loja.end || loja.endereco || 'Endereço não disponível';
             L.marker([loja.latitude, loja.longitude], { icon: greenIcon }).addTo(map)
-                .bindPopup(`<b>${loja.nome}</b><br>${loja.end || loja.endereco}`);
-        }
+                .bindPopup(`<b>${nome}</b><br>${end}`);
+        } catch(e) { /* ignora entrada inválida */ }
     });
 } else {
     console.error("ERRO: Arquivo lojas.js não carregado!");
@@ -99,12 +109,11 @@ async function buscarLoja() {
         var menorDist = Infinity;
 
         lojas.forEach(loja => {
-            if(loja.latitude && loja.longitude) {
-                var dist = map.distance([lat, lon], [loja.latitude, loja.longitude]);
-                if(dist < menorDist) {
-                    menorDist = dist;
-                    maisPerto = loja;
-                }
+            if(!coordValida(loja.latitude, loja.longitude)) return;
+            var dist = map.distance([lat, lon], [loja.latitude, loja.longitude]);
+            if(dist < menorDist) {
+                menorDist = dist;
+                maisPerto = loja;
             }
         });
 

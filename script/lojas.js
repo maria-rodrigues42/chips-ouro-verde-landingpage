@@ -1,9 +1,8 @@
-
 //arquivo lojas js
 //dados das lojas, facil de atualizar depois
 
 const lojas = [
-        {
+    {
         "nome": "L. CAMARGO DE ALCANTARA - São Paulo",
         "latitude": -23.605753957429265,
         "longitude": -46.62287324548451,
@@ -717,5 +716,4 @@ const lojas = [
         "longitude": -46.453424735581955,
         "end": "ANTONIO ASSUNCAO FERREIRA, 145 - PRQ BOA ESPERANCA, São Paulo - SP, 08341-360"
     }
-    
 ];
